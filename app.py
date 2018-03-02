@@ -39,7 +39,10 @@ Attritbutes:
         self.today = dt.datetime.now().strftime("%m/%d/%Y")
         self.USRS = ['5121','4444','5331']
         self.PASSWORD = 'test'
+        self.policies = []
         self.qa_specialist = 'Greg'
+
+        # Dance
         self.main_loop()
 
     def main_loop(self):
@@ -53,12 +56,17 @@ Attritbutes:
 
             cmd = raw_input("\nEnter a command: ").strip().lower()
 
-            if cmd == 'q':
+            if cmd == 'p':
+                self.clear_screen()
+                self.policies = self.get_policies()
+
+            elif cmd == 'q':
                 self.clear_screen()
                 print("Thanks for playing!")
                 time.sleep(1)
                 self.clear_screen()
                 sys.exit(0)
+
             else:
                 print("Try Again...")
                 return self.main_loop()
@@ -87,7 +95,8 @@ Attritbutes:
     
     def print_main_menu(self):
         print(
-                "{0!s:^60} ".format(": MENU :") + "\n" +
+                ": MENU :\n"
+                ": p     -  Enter Policies\n"
                 ": q     -  Quit\n"
         )
 
@@ -95,14 +104,20 @@ Attritbutes:
         print("\033c")
     
     def get_policies(self):
-        # states = ['ok','mo','ar']
-        # policies = []
-        # for s in states:
-        #     try:
-        #         p = input('Enter policy no. for {} rewrite'.format(s)).upper()
-        #         if p.startswith('N'):
-        #             policies.append(p)
-        return ["N35023892", "N24051785", "N03576691"]
+        if self.policies:
+            print("The current policies are set to (ok,mo,ar): ")
+            print("{}, {}, {}".format(*self.policies))
+        else:
+            print("No policies currently selected...")
+    
+        states = ['Oklahoma','Missouri','Arkansas']
+        tmp_pols = []
+
+        for s in states:
+            p = raw_input('Enter policy no. for {} rewrite'.format(s)).upper()
+            tmp_pols.append(p)
+        
+        return tmp_pols
 
 
     def get_test_environment(self):
