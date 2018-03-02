@@ -15,7 +15,9 @@ from selenium.webdriver.common.by import By
 from selenium.common.exceptions import WebDriverException
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.action_chains import ActionChains
+import sys
 import time
+import datetime as dt
 
 
 class App(object):
@@ -33,17 +35,59 @@ Attritbutes:
 
 
     """
+    def __init__(self):
+        self.today = dt.datetime.now().strftime("%m/%d/%Y")
+        self.USRS = ['5121','4444','5331']
+        self.PASSWORD = 'test'
+        self.qa_specialist = 'Greg'
 
-    USRS = ['5121','4444','5331']
-    PASSWORD = 'test'
-    qa_specialist = 'Greg'
-
-    def main_loop():
+    def main_loop(self):
         """
     Manages the UI.
         """
+        while True:
+            self.print_screen()
+            self.print_main_menu()
 
-    def get_policies():
+            cmd = input("Enter a command:").strip().lower()
+
+            if cmd == 'q':
+                self.clear_screen()
+                print("Thanks for playing!")
+                time.sleep(1)
+                self.clear_screen()
+                sys.exit(0)
+
+    def print_screen(self):
+        print('--------------------------------------------------------------')
+        print( 
+            " _____                        _             \n"             
+            "|  __ \                      | |            \n"            
+            "| |__) _   _ _ __  _ __   ___| |_           \n"         
+            "|  ___| | | | '_ \| '_ \ / _ | __|          \n"
+            "| |   | |_| | |_) | |_) |  __| |_           \n"
+            "|_|    \__,_| .__/| .__/ \___|\__|          \n"
+            "            | |   | |                       \n"
+            "            |_|_  |_|          _            \n"
+            "            |  \/  |         | |            \n"
+            "            | \  / | __ _ ___| |_ ___ _ __  \n"
+            "            | |\/| |/ _` / __| __/ _ | '__| \n"
+            "            | |  | | (_| \__ | ||  __| |    \n"
+            "            |_|  |_|\__,_|___/\__\___|_|    \n"
+            "Welcome to Puppet Master {}".format(self.qa_specialist)                                 
+                                             )
+        print('--------------------------------------------------------------')
+    
+    def print_main_menu(self):
+        print(
+                "{0!s:^60} ".format(": MENU :") + "\n"
+                ": q     -  Quit\n"
+        )
+
+    def clear_screen(self):
+        print("\033c", end="")
+    
+    def get_policies(self):
         # states = ['ok','mo','ar']
         # policies = []
         # for s in states:
@@ -54,7 +98,7 @@ Attritbutes:
         return ["N35023892", "N24051785", "N03576691"]
 
 
-    def get_test_environment():
+    def get_test_environment(self):
     """
         Prompts user for testing environment, verifies and
         @returns string
@@ -62,7 +106,7 @@ Attritbutes:
         return  "@cherry-pick-4a874f92.dev.equityins.net/cgi-bin/bbw.sh?pgm=POLICY&policyno="
 
 
-    def build_urls():
+    def build_urls(self):
         pols = get_policies()
         environ = get_test_environment()
         return ['http://'+u[0]+':'+PASSWORD+environ+u[1] for u in zip(USRS,pols)]
@@ -91,7 +135,7 @@ Attritbutes:
     #  find way to check for when browser is closed, driver is stopped and write errors to a file
 
 
-    def puppet_master():
+    def play(self):
         """
     The master of puppets controls the browsers and hopefully
     in the future the Docker containers and the The World!!!
@@ -118,4 +162,4 @@ Attritbutes:
 
 
 if __name__ == '__main__':
-    main()
+    App()
