@@ -15,7 +15,9 @@ from selenium.webdriver.common.by import By
 from selenium.common.exceptions import WebDriverException
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.action_chains import ActionChains
+
 import sys
+import csv
 import time
 import datetime as dt
 
@@ -32,18 +34,54 @@ different browsers and OSes, situations,and states.
 Attritbutes:
     USRS        -   list of testing agents' numbers
     PASSWORD    -   the pass for the tesing agents
-
+    sfile       -   string of file name saved data file 
+                    that keeps policy and vdev url from 
+                    previous usages.
+    policies    -   list of policies to be used
+    vdev        -   url to be used for the testing
+    qa_specialis-   name of the current qa specialist
 
     """
     def __init__(self):
         self.today = dt.datetime.now().strftime("%m/%d/%Y")
         self.USRS = ['5121','4444','5331']
         self.PASSWORD = 'test'
+        self.sfile = './data.csv'
+        
         self.policies = []
+        self.vdev = ""
+
         self.qa_specialist = 'Greg'
 
         # Dance
+        self.load_sfile()
         self.main_loop()
+
+    def load_sfile(self):
+        with open(self.sfile, 'r+') as f:
+            reader = csv.reader(f)
+            self.policies = reader.next()
+            self.vdev = reader.next()
+    
+    def save_sfile(self):
+        data = []
+        data.append(self.policies)
+        data.append(self.vdev)
+
+        with open(self.sfile, 'w+') as f:
+            writer = csv.writer(f)
+            writer.writerows(data)
+
+    def get_vdev(self):
+        if self.vdev:
+            print("The current vdev is set to {} ".format(self.vdev))
+        else:
+            print("No current vdev.")
+        vdev = raw_input("Enter a vdev: ")
+        # do some validation perhaps?
+        if vdev == '':
+            vdev = self.vdev
+        return vdev
 
     def main_loop(self):
         """
@@ -61,6 +99,7 @@ Attritbutes:
                 self.policies = self.get_policies()
 
             elif cmd == 'q':
+                self.save_sfile()
                 self.clear_screen()
                 print("Thanks for playing!")
                 time.sleep(1)
@@ -185,3 +224,6 @@ Attritbutes:
 
 if __name__ == '__main__':
     App()
+
+
+
