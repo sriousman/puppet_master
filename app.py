@@ -1,12 +1,12 @@
-"""
-Utility to assist QA Specialist in opening rewrites in
-multiple browsers in multiple states.
-Future: assist in finding suitable policies
-Future: assist in copying policies to testing environments
-Future: assist in opening browsers in VMs (IE and Edge)
-Future: assist in keeping console error logs
-Future: assist in keeping notes and writing test reviews
-"""
+# """
+# Utility to assist QA Specialist in opening rewrites in
+# multiple browsers in multiple states.
+# Future: assist in finding suitable policies
+# Future: assist in copying policies to testing environments
+# Future: assist in opening browsers in VMs (IE and Edge)
+# Future: assist in keeping console error logs
+# Future: assist in keeping notes and writing test reviews
+# """
 
 from selenium import webdriver
 from selenium.webdriver.support import ui
@@ -40,16 +40,18 @@ Attritbutes:
         self.USRS = ['5121','4444','5331']
         self.PASSWORD = 'test'
         self.qa_specialist = 'Greg'
+        self.main_loop()
 
     def main_loop(self):
         """
     Manages the UI.
         """
         while True:
+            self.clear_screen()
             self.print_screen()
             self.print_main_menu()
 
-            cmd = input("Enter a command:").strip().lower()
+            cmd = raw_input("\nEnter a command: ").strip().lower()
 
             if cmd == 'q':
                 self.clear_screen()
@@ -57,6 +59,10 @@ Attritbutes:
                 time.sleep(1)
                 self.clear_screen()
                 sys.exit(0)
+            else:
+                print("Try Again...")
+                return self.main_loop()
+
 
     def print_screen(self):
         print('--------------------------------------------------------------')
@@ -74,18 +80,19 @@ Attritbutes:
             "            | |\/| |/ _` / __| __/ _ | '__| \n"
             "            | |  | | (_| \__ | ||  __| |    \n"
             "            |_|  |_|\__,_|___/\__\___|_|    \n"
+            "--------------------------------------------------------------\n"
             "Welcome to Puppet Master {}".format(self.qa_specialist)                                 
                                              )
         print('--------------------------------------------------------------')
     
     def print_main_menu(self):
         print(
-                "{0!s:^60} ".format(": MENU :") + "\n"
+                "{0!s:^60} ".format(": MENU :") + "\n" +
                 ": q     -  Quit\n"
         )
 
     def clear_screen(self):
-        print("\033c", end="")
+        print("\033c")
     
     def get_policies(self):
         # states = ['ok','mo','ar']
@@ -99,17 +106,17 @@ Attritbutes:
 
 
     def get_test_environment(self):
-    """
-        Prompts user for testing environment, verifies and
-        @returns string
-    """
+        """
+    Prompts user for testing environment, verifies and
+    @returns string
+        """
         return  "@cherry-pick-4a874f92.dev.equityins.net/cgi-bin/bbw.sh?pgm=POLICY&policyno="
 
 
     def build_urls(self):
-        pols = get_policies()
-        environ = get_test_environment()
-        return ['http://'+u[0]+':'+PASSWORD+environ+u[1] for u in zip(USRS,pols)]
+        pols = self.get_policies()
+        environ = self.get_test_environment()
+        return ['http://'+u[0]+':'+self.PASSWORD+environ+u[1] for u in zip(self.USRS,pols)]
 
 
     # def check_browser_errors(driver):
@@ -140,7 +147,7 @@ Attritbutes:
     The master of puppets controls the browsers and hopefully
     in the future the Docker containers and the The World!!!
         """
-        urls = build_urls()
+        urls = self.build_urls()
         print(urls)
         # Open Firefox browsers in all 3 states and go to 
         # Quick Quote Rewrite Auto Rater Page
