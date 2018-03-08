@@ -18,7 +18,9 @@ from selenium.webdriver.common.action_chains import ActionChains
 
 import sys
 import csv
+import thread
 import time
+import traceback
 import datetime as dt
 
 
@@ -54,6 +56,7 @@ Attritbutes:
         self.qa_specialist = 'Greg'
 
         # Dance
+        
         self.load_sfile()
         self.main_loop()
 
@@ -66,7 +69,9 @@ Attritbutes:
     def save_sfile(self):
         data = []
         data.append(self.policies)
+        print(data)
         data.append(self.vdev)
+        print(data)
 
         with open(self.sfile, 'w+') as f:
             writer = csv.writer(f)
@@ -79,9 +84,9 @@ Attritbutes:
             print("No current vdev.")
         vdev = raw_input("Enter a vdev: ")
         # do some validation perhaps?
-        if vdev == '':
-            vdev = self.vdev
-        return vdev
+        if vdev:
+            self.vdev = ['@'+ vdev[8:] + 'cgi-bin/bbw.sh?pgm=POLICY&policyno=']
+        
 
     def main_loop(self):
         """
@@ -90,6 +95,9 @@ Attritbutes:
         while True:
             self.clear_screen()
             self.print_screen()
+            print(zip(self.USRS,self.policies))
+            print(self.vdev)
+            print(self.get_urls)
             self.print_main_menu()
 
             cmd = raw_input("\nEnter a command: ").strip().lower()
@@ -97,13 +105,26 @@ Attritbutes:
             if cmd == 'p':
                 self.clear_screen()
                 self.policies = self.get_policies()
+            elif cmd == 'v':
+                self.clear_screen()
+                self.get_vdev()
+
+            elif cmd == 'r':
+                try:
+                    thread.start_new_thread(self.rewrites, (self.get_rewrite_urls(),))
+                except Exception as e:
+                    self.clear_screen()
+                    traceback.print_exc()
+                    print(type(e))
+                    print(e)
+                    print("Something went wrong! Try changing some data and continue.")
 
             elif cmd == 'q':
                 self.save_sfile()
-                self.clear_screen()
+               # self.clear_screen()
                 print("Thanks for playing!")
                 time.sleep(1)
-                self.clear_screen()
+               # self.clear_screen()
                 sys.exit(0)
 
             else:
@@ -113,6 +134,7 @@ Attritbutes:
 
     def print_screen(self):
         print('--------------------------------------------------------------')
+        print("Today's Date: {}".format(self.today))
         print( 
             " _____                        _             \n"             
             "|  __ \                      | |            \n"            
@@ -134,9 +156,11 @@ Attritbutes:
     
     def print_main_menu(self):
         print(
-                ": MENU :\n"
-                ": p     -  Enter Policies\n"
-                ": q     -  Quit\n"
+                ":          MENU                   :\n"
+                ": r     -  Make the puppets dance!:\n"
+                ": p     -  Enter New Policies     :\n"  
+                ": v     -  Enter New Evirnoment   :\n"
+                ": q     -  Quit                   :\n"
         )
 
     def clear_screen(self):
@@ -157,51 +181,21 @@ Attritbutes:
             tmp_pols.append(p)
         
         return tmp_pols
-
-
-    def get_test_environment(self):
+        
+    def get_nb_urls(self):
         """
-    Prompts user for testing environment, verifies and
-    @returns string
+        Urls for new business applications
+        eg https://417-pdf-timeout.dev.equityins.net/cgi-bin/qq.entry.py?agent=5121
         """
-        return  "@cherry-pick-4a874f92.dev.equityins.net/cgi-bin/bbw.sh?pgm=POLICY&policyno="
+    def get_rewrite_urls(self):
+        urls = ['http://'+u[0]+':'+self.PASSWORD+self.vdev[0]+u[1] for u in zip(self.USRS,self.policies)]
+        return urls
 
-
-    def build_urls(self):
-        pols = self.get_policies()
-        environ = self.get_test_environment()
-        return ['http://'+u[0]+':'+self.PASSWORD+environ+u[1] for u in zip(self.USRS,pols)]
-
-
-    # def check_browser_errors(driver):
-    #     """
-    #     Checks browser for errors, returns a list of errors
-    #     :param driver:
-    #     :return:
-    #     """
-    #     try:
-    #         browserlogs = driver.get_log('browser')
-    #     except (ValueError, WebDriverException) as e:
-    #         # Some browsers do not support getting logs
-    #         LOGGER.debug("Could not get browser logs for driver %s due to exception: %s",
-    #                      driver, e)
-    #         return []
-
-    #     errors = []
-    #     for entry in browserlogs:
-    #         if entry['level'] == 'SEVERE':
-    #             errors.append(entry)
-    #     return errors
-    ## TODO
-    #  find way to check for when browser is closed, driver is stopped and write errors to a file
-
-
-    def play(self):
+    def rewrites(self, urls):
         """
-    The master of puppets controls the browsers and hopefully
-    in the future the Docker containers and the The World!!!
+    The master of puppets controls the browsers and soon
+    Docker containers and someday The World!!!
         """
-        urls = self.build_urls()
         print(urls)
         # Open Firefox browsers in all 3 states and go to 
         # Quick Quote Rewrite Auto Rater Page
