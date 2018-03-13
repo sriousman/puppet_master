@@ -1,13 +1,12 @@
 from selenium.webdriver.common.by import By
+from pages.base import BasePage
 
-class  QQRewriteARLocators(object):
+
+class AddressModalLocators(BasePage):   
     """
-    A class for the Quick Quote Auto Rater page locators.
+    Class for holding the locators for the Address Modal
     """
 
-    ADDRESS_BUTTON = (By.ID, 'address-button')
-
-    # Address Modal
     MAILING_ADDRESS_INPUT = (By.ID, 'address-mailing-address')
     MAILING_APARTMENT_INPUT = (By.ID, 'address-mailing-apartment-number')
     MAILING_ZIPCODE_INPUT = (By.ID, 'address-mailing-zip')
@@ -26,8 +25,3 @@ class  QQRewriteARLocators(object):
 
     SAVE_BUTTON = (By.XPATH, '//button[text()="Save"]')
     CANCEL_BUTTON = (By.XPATH, '//button[text()="Cancel"]')
-    # End Address Modal
-    
-    EXIT_BUTTON = (By.ID, 'exit')
-    RATE_BUTTON = (By.ID, 'rate')
-

@@ -77,16 +77,14 @@ Attritbutes:
             writer = csv.writer(f)
             writer.writerows(data)
 
-    def get_vdev(self):
+    def set_vdev(self):
         if self.vdev:
             print("The current vdev is set to {} ".format(self.vdev))
         else:
             print("No current vdev.")
         vdev = raw_input("Enter a vdev: ")
-        # do some validation perhaps?
-        if vdev:
-            self.vdev = ['@'+ vdev[8:] + 'cgi-bin/bbw.sh?pgm=POLICY&policyno=']
-        
+        if vdev != '':
+            self.vdev = vdev        
 
     def main_loop(self):
         """
@@ -95,9 +93,7 @@ Attritbutes:
         while True:
             self.clear_screen()
             self.print_screen()
-            print(zip(self.USRS,self.policies))
-            print(self.vdev)
-            print(self.get_urls)
+            print('Current vdev = ', self.vdev)
             self.print_main_menu()
 
             cmd = raw_input("\nEnter a command: ").strip().lower()
@@ -107,8 +103,7 @@ Attritbutes:
                 self.policies = self.get_policies()
             elif cmd == 'v':
                 self.clear_screen()
-                self.get_vdev()
-
+                self.set_vdev()
             elif cmd == 'r':
                 try:
                     thread.start_new_thread(self.rewrites, (self.get_rewrite_urls(),))
@@ -118,6 +113,14 @@ Attritbutes:
                     print(type(e))
                     print(e)
                     print("Something went wrong! Try changing some data and continue.")
+            elif cmd == 'n':
+                try:
+                    thread.start_new_thread(self.new_apps, (self.get_na_urls(),))
+                except Exception as e:
+                    self.clear_screen()
+                    traceback.print_exc()
+                    print(type(e))
+                    print(e)
 
             elif cmd == 'q':
                 self.save_sfile()
@@ -157,7 +160,8 @@ Attritbutes:
     def print_main_menu(self):
         print(
                 ":          MENU                   :\n"
-                ": r     -  Make the puppets dance!:\n"
+                ": r     -  Rewrites               :\n"
+                ": n     -  New App                :\n"
                 ": p     -  Enter New Policies     :\n"  
                 ": v     -  Enter New Evirnoment   :\n"
                 ": q     -  Quit                   :\n"
@@ -182,13 +186,16 @@ Attritbutes:
         
         return tmp_pols
         
-    def get_nb_urls(self):
-        """
-        Urls for new business applications
-        eg https://417-pdf-timeout.dev.equityins.net/cgi-bin/qq.entry.py?agent=5121
-        """
+    def get_na_urls(self):
+        urls = [('http://' + u + ':' + self.PASSWORD + '@' + self.vdev +
+            '.equityins.net/cgi-bin/qq.entry.py?agent=' + u )
+            for u in self.USRS]
+        return urls
+
     def get_rewrite_urls(self):
-        urls = ['http://'+u[0]+':'+self.PASSWORD+self.vdev[0]+u[1] for u in zip(self.USRS,self.policies)]
+        urls = [('http://' + u[0] + ':' + self.PASSWORD + '@' + self.vdev +
+            '.equityins.net/cgi-bin/bbw.sh?pgm=POLICY&policyno=' + u[1])
+            for u in zip(self.USRS,self.policies)]
         return urls
 
     def rewrites(self, urls):
@@ -215,6 +222,23 @@ Attritbutes:
             driver.get(u)
             driver.find_element(By.XPATH, '//a[text()="Quote a rewrite with change"]').click()
 
+    def new_apps(self):
+        urls = self.get_na_urls
+        for u in urls:
+            options = Options()
+            options.add_argument("--devtools")
+            driver = webdriver.Firefox(firefox_options=options)
+            driver.get(u)
+            
+        
+        # Open Chrome browsers in all 3 states and go to 
+        # Quick Quote Rewrite Auto Rater
+        for u in urls:
+            options = webdriver.ChromeOptions()
+            options.add_experimental_option("detach", True)
+            driver = webdriver.Chrome(chrome_options=options)
+            driver.get(u)
+            
 
 if __name__ == '__main__':
     App()

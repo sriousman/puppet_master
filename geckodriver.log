@@ -219,3 +219,487 @@ JavaScript error: http://5121:test@stage.dev.equityins.net/scripts/error.js, lin
 1520268885748	Marionette	INFO	Enabled via --marionette
 1520268889399	Marionette	INFO	Listening on port 43691
 1520268889488	Marionette	WARN	TLS certificate errors will be ignored for this session
+1520518638482	geckodriver	INFO	geckodriver 0.19.1
+1520518638512	geckodriver	INFO	Listening on 127.0.0.1:34917
+1520518639743	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--devtools" "-profile" "/tmp/rust_mozprofile.2EIqmf0CduqT"
+1520518644741	Marionette	INFO	Enabled via --marionette
+1520518650975	Marionette	INFO	Listening on port 37861
+1520518650989	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1520520861348	geckodriver	INFO	geckodriver 0.19.1
+1520520861383	geckodriver	INFO	Listening on 127.0.0.1:37207
+1520520862632	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--devtools" "-profile" "/tmp/rust_mozprofile.BcEBw0NBfabT"
+1520520864044	Marionette	INFO	Enabled via --marionette
+1520520867945	Marionette	INFO	Listening on port 41719
+1520520868517	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1520525134176	geckodriver	INFO	geckodriver 0.19.1
+1520525134203	geckodriver	INFO	Listening on 127.0.0.1:36889
+1520525135324	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--devtools" "-profile" "/tmp/rust_mozprofile.dswbUCY1p4sb"
+1520525138063	Marionette	INFO	Enabled via --marionette
+1520525143149	Marionette	INFO	Listening on port 39803
+1520525143736	Marionette	WARN	TLS certificate errors will be ignored for this session
+1520525154339	geckodriver	INFO	geckodriver 0.19.1
+1520525154343	geckodriver	INFO	Listening on 127.0.0.1:34239
+1520525155459	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--devtools" "-profile" "/tmp/rust_mozprofile.v3OQyny2EKBF"
+1520525157303	Marionette	INFO	Enabled via --marionette
+1520525161720	Marionette	INFO	Listening on port 36121
+1520525161779	Marionette	WARN	TLS certificate errors will be ignored for this session
+1520525172515	geckodriver	INFO	geckodriver 0.19.1
+1520525172521	geckodriver	INFO	Listening on 127.0.0.1:34161
+1520525173665	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--devtools" "-profile" "/tmp/rust_mozprofile.8mwDT17iFp7e"
+1520525175105	Marionette	INFO	Enabled via --marionette
+1520525180352	Marionette	INFO	Listening on port 41235
+1520525180806	Marionette	WARN	TLS certificate errors will be ignored for this session
+1520544073993	geckodriver	INFO	geckodriver 0.19.1
+1520544074023	geckodriver	INFO	Listening on 127.0.0.1:58775
+1520544075252	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--devtools" "-profile" "/tmp/rust_mozprofile.e1g1MlsXKEzX"
+1520544077750	Marionette	INFO	Enabled via --marionette
+1520544084097	Marionette	INFO	Listening on port 38605
+1520544084185	Marionette	WARN	TLS certificate errors will be ignored for this session
+1520544093638	geckodriver	INFO	geckodriver 0.19.1
+1520544093642	geckodriver	INFO	Listening on 127.0.0.1:47107
+1520544094760	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--devtools" "-profile" "/tmp/rust_mozprofile.m039ts8SPxbY"
+1520544095932	Marionette	INFO	Enabled via --marionette
+1520544099780	Marionette	INFO	Listening on port 36137
+1520544099877	Marionette	WARN	TLS certificate errors will be ignored for this session
+1520544109760	geckodriver	INFO	geckodriver 0.19.1
+1520544109766	geckodriver	INFO	Listening on 127.0.0.1:34381
+1520544110899	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--devtools" "-profile" "/tmp/rust_mozprofile.d7ZPhXYX1SbX"
+1520544112451	Marionette	INFO	Enabled via --marionette
+1520544116390	Marionette	INFO	Listening on port 46363
+1520544116505	Marionette	WARN	TLS certificate errors will be ignored for this session
+1520544437628	geckodriver	INFO	geckodriver 0.19.1
+1520544437633	geckodriver	INFO	Listening on 127.0.0.1:43851
+1520544438784	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--devtools" "-profile" "/tmp/rust_mozprofile.h8DSK0QpcU6H"
+1520544440270	Marionette	INFO	Enabled via --marionette
+1520544444029	Marionette	INFO	Listening on port 38181
+1520544444110	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1520544574396	geckodriver	INFO	geckodriver 0.19.1
+1520544574401	geckodriver	INFO	Listening on 127.0.0.1:56065
+1520544575516	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--devtools" "-profile" "/tmp/rust_mozprofile.lILJoBtHMXaX"
+1520544576475	Marionette	INFO	Enabled via --marionette
+1520544580029	Marionette	INFO	Listening on port 43497
+1520544580701	Marionette	WARN	TLS certificate errors will be ignored for this session
+1520544588912	geckodriver	INFO	geckodriver 0.19.1
+1520544588917	geckodriver	INFO	Listening on 127.0.0.1:54939
+1520544590034	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--devtools" "-profile" "/tmp/rust_mozprofile.hIQ9vsfZoPUh"
+1520544591203	Marionette	INFO	Enabled via --marionette
+1520544595107	Marionette	INFO	Listening on port 39881
+1520544595156	Marionette	WARN	TLS certificate errors will be ignored for this session
+1520544602556	geckodriver	INFO	geckodriver 0.19.1
+1520544602561	geckodriver	INFO	Listening on 127.0.0.1:38681
+1520544603677	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--devtools" "-profile" "/tmp/rust_mozprofile.Cx8GV9pNfzL5"
+1520544604697	Marionette	INFO	Enabled via --marionette
+1520544608662	Marionette	INFO	Listening on port 35013
+1520544608698	Marionette	WARN	TLS certificate errors will be ignored for this session
+1520630895947	geckodriver	INFO	geckodriver 0.19.1
+1520630895980	geckodriver	INFO	Listening on 127.0.0.1:42159
+1520630897206	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--devtools" "-profile" "/tmp/rust_mozprofile.twyWXtjPeWnZ"
+1520630898624	Marionette	INFO	Enabled via --marionette
+1520630902211	Marionette	INFO	Listening on port 34165
+1520630902244	Marionette	WARN	TLS certificate errors will be ignored for this session
+1520630909776	geckodriver	INFO	geckodriver 0.19.1
+1520630909781	geckodriver	INFO	Listening on 127.0.0.1:35825
+1520630910901	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--devtools" "-profile" "/tmp/rust_mozprofile.iHb7yNUy9xY6"
+1520630912050	Marionette	INFO	Enabled via --marionette
+1520630915431	Marionette	INFO	Listening on port 32831
+1520630915519	Marionette	WARN	TLS certificate errors will be ignored for this session
+1520630922102	geckodriver	INFO	geckodriver 0.19.1
+1520630922106	geckodriver	INFO	Listening on 127.0.0.1:47317
+1520630923227	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--devtools" "-profile" "/tmp/rust_mozprofile.23URFn6Abqt7"
+1520630924174	Marionette	INFO	Enabled via --marionette
+1520630927600	Marionette	INFO	Listening on port 42915
+1520630927649	Marionette	WARN	TLS certificate errors will be ignored for this session
+1520631988639	geckodriver	INFO	geckodriver 0.19.1
+1520631988647	geckodriver	INFO	Listening on 127.0.0.1:51735
+1520631989764	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--devtools" "-profile" "/tmp/rust_mozprofile.PIlzv5BPIRe1"
+1520631990716	Marionette	INFO	Enabled via --marionette
+1520631994022	Marionette	INFO	Listening on port 40449
+1520631994684	Marionette	WARN	TLS certificate errors will be ignored for this session
+1520632002926	geckodriver	INFO	geckodriver 0.19.1
+1520632002932	geckodriver	INFO	Listening on 127.0.0.1:43721
+1520632004049	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--devtools" "-profile" "/tmp/rust_mozprofile.ZAokx1Dftz6J"
+1520632004969	Marionette	INFO	Enabled via --marionette
+1520632008375	Marionette	INFO	Listening on port 36061
+1520632008470	Marionette	WARN	TLS certificate errors will be ignored for this session
+1520632018240	geckodriver	INFO	geckodriver 0.19.1
+1520632018244	geckodriver	INFO	Listening on 127.0.0.1:50223
+1520632019363	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--devtools" "-profile" "/tmp/rust_mozprofile.JtBP1eqXltWH"
+1520632020269	Marionette	INFO	Enabled via --marionette
+1520632023795	Marionette	INFO	Listening on port 44573
+1520632024307	Marionette	WARN	TLS certificate errors will be ignored for this session
+1520632538618	geckodriver	INFO	geckodriver 0.19.1
+1520632538648	geckodriver	INFO	Listening on 127.0.0.1:36187
+1520632539865	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--devtools" "-profile" "/tmp/rust_mozprofile.rq6IJyCrAQGX"
+1520632544613	Marionette	INFO	Enabled via --marionette
+1520632551233	Marionette	INFO	Listening on port 39337
+1520632552928	Marionette	WARN	TLS certificate errors will be ignored for this session
+1520632559907	geckodriver	INFO	geckodriver 0.19.1
+1520632559912	geckodriver	INFO	Listening on 127.0.0.1:48307
+1520632561033	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--devtools" "-profile" "/tmp/rust_mozprofile.aa7XIjyzbRAs"
+1520632562121	Marionette	INFO	Enabled via --marionette
+1520632566046	Marionette	INFO	Listening on port 36979
+1520632566156	Marionette	WARN	TLS certificate errors will be ignored for this session
+Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1859"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1859:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+NetworkResponseListener.prototype._getSecurityInfo<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:516:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+onStartRequest@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:436:5
+Line: 1859, column: 0
+console.error: 
+  Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1859"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1859:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+NetworkResponseListener.prototype._getSecurityInfo<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:516:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+onStartRequest@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:436:5
+Line: 1859, column: 0
+Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1859"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1859:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+NetworkResponseListener.prototype._getSecurityInfo<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:516:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+onStartRequest@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:436:5
+Line: 1859, column: 0
+console.error: 
+  Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1859"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1859:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+NetworkResponseListener.prototype._getSecurityInfo<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:516:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+onStartRequest@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:436:5
+Line: 1859, column: 0
+Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1859"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1859:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+_onComplete@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:641:5
+onStreamClose@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:598:7
+onInputStreamReady@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:689:7
+Line: 1859, column: 0
+console.error: 
+  Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1859"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1859:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+_onComplete@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:641:5
+onStreamClose@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:598:7
+onInputStreamReady@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:689:7
+Line: 1859, column: 0
+Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1859"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1859:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+_onComplete@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:641:5
+onStreamClose@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:598:7
+onInputStreamReady@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:689:7
+Line: 1859, column: 0
+console.error: 
+  Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1859"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1859:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+_onComplete@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:641:5
+onStreamClose@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:598:7
+onInputStreamReady@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:689:7
+Line: 1859, column: 0
+console.error: 
+undefined
+WebConsolePanel open failed. undefined: this.browserRequire is not a function
+console.error: 
+  WebConsolePanel open failed. undefined: this.browserRequire is not a function
+  Message: TypeError: this.browserRequire is not a function
+  Stack:
+    _createSourceMapService@resource://devtools/shared/base-loader.js -> resource://devtools/client/framework/toolbox.js:569:19
+get sourceMapURLService@resource://devtools/shared/base-loader.js -> resource://devtools/client/framework/toolbox.js:656:22
+init/<@resource://devtools/shared/base-loader.js -> resource://devtools/client/webconsole/new-console-output/new-console-output-wrapper.js:151:11
+init@resource://devtools/shared/base-loader.js -> resource://devtools/client/webconsole/new-console-output/new-console-output-wrapper.js:41:12
+init@resource://devtools/shared/base-loader.js -> resource://devtools/client/webconsole/new-webconsole.js:88:11
+
+*************************
+A coding exception was thrown in a Promise resolution callback.
+See https://developer.mozilla.org/Mozilla/JavaScript_code_modules/Promise.jsm/Promise
+
+Full message: TypeError: panel is undefined
+Full stack: onLoad/<@resource://devtools/shared/base-loader.js -> resource://devtools/client/framework/toolbox.js:1683:13
+process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+
+*************************
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1520887614823	geckodriver	INFO	geckodriver 0.19.1
+1520887614858	geckodriver	INFO	Listening on 127.0.0.1:49051
+1520887616143	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--devtools" "-profile" "/tmp/rust_mozprofile.rClZ4Czm3T9Z"
+1520887618533	Marionette	INFO	Enabled via --marionette
+1520887623391	Marionette	INFO	Listening on port 37817
+1520887623495	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1520887678511	geckodriver	INFO	geckodriver 0.19.1
+1520887678515	geckodriver	INFO	Listening on 127.0.0.1:43659
+1520887679628	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--devtools" "-profile" "/tmp/rust_mozprofile.wF6pQ4zrD6ga"
+1520887680597	Marionette	INFO	Enabled via --marionette
+1520887684326	Marionette	INFO	Listening on port 35691
+1520887684360	Marionette	WARN	TLS certificate errors will be ignored for this session
+1520887692239	geckodriver	INFO	geckodriver 0.19.1
+1520887692244	geckodriver	INFO	Listening on 127.0.0.1:33021
+1520887693361	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--devtools" "-profile" "/tmp/rust_mozprofile.SWuzP66IyjJV"
+1520887694552	Marionette	INFO	Enabled via --marionette
+1520887698740	Marionette	INFO	Listening on port 35883
+1520887699239	Marionette	WARN	TLS certificate errors will be ignored for this session
+1520887705682	geckodriver	INFO	geckodriver 0.19.1
+1520887705687	geckodriver	INFO	Listening on 127.0.0.1:34669
+1520887706819	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--devtools" "-profile" "/tmp/rust_mozprofile.GZtcQ4BNQ94H"
+1520887708158	Marionette	INFO	Enabled via --marionette
+1520887712323	Marionette	INFO	Listening on port 35789
+1520887712366	Marionette	WARN	TLS certificate errors will be ignored for this session
+1520890391584	geckodriver	INFO	geckodriver 0.19.1
+1520890391591	geckodriver	INFO	Listening on 127.0.0.1:37155
+1520890392741	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--devtools" "-profile" "/tmp/rust_mozprofile.hOniIFBMoq9b"
+1520890394081	Marionette	INFO	Enabled via --marionette
+1520890398105	Marionette	INFO	Listening on port 33555
+1520890398169	Marionette	WARN	TLS certificate errors will be ignored for this session
+1520890404808	geckodriver	INFO	geckodriver 0.19.1
+1520890404814	geckodriver	INFO	Listening on 127.0.0.1:46237
+1520890405938	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--devtools" "-profile" "/tmp/rust_mozprofile.z3rt10MRWFOl"
+1520890406992	Marionette	INFO	Enabled via --marionette
+1520890410800	Marionette	INFO	Listening on port 37747
+1520890410861	Marionette	WARN	TLS certificate errors will be ignored for this session
+1520890416695	geckodriver	INFO	geckodriver 0.19.1
+1520890416703	geckodriver	INFO	Listening on 127.0.0.1:45745
+1520890417828	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--devtools" "-profile" "/tmp/rust_mozprofile.Vi0xWktEDOdi"
+1520890418862	Marionette	INFO	Enabled via --marionette
+1520890422796	Marionette	INFO	Listening on port 37159
+1520890422849	Marionette	WARN	TLS certificate errors will be ignored for this session
+1520890428739	geckodriver	INFO	geckodriver 0.19.1
+1520890428745	geckodriver	INFO	Listening on 127.0.0.1:41149
+1520890429875	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--devtools" "-profile" "/tmp/rust_mozprofile.nmEwXBUqy0P5"
+1520890431592	Marionette	INFO	Enabled via --marionette
+1520890435273	Marionette	INFO	Listening on port 44565
+1520890436089	Marionette	WARN	TLS certificate errors will be ignored for this session
+1520890441655	geckodriver	INFO	geckodriver 0.19.1
+1520890441659	geckodriver	INFO	Listening on 127.0.0.1:60391
+1520890442778	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--devtools" "-profile" "/tmp/rust_mozprofile.MhzDB1p6uTgB"
+1520890444149	Marionette	INFO	Enabled via --marionette
+1520890448307	Marionette	INFO	Listening on port 35877
+1520890448400	Marionette	WARN	TLS certificate errors will be ignored for this session
+Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1859"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1859:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+NetworkResponseListener.prototype._getSecurityInfo<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:516:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+onStartRequest@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:436:5
+Line: 1859, column: 0
+console.error: 
+  Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1859"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1859:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+NetworkResponseListener.prototype._getSecurityInfo<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:516:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+onStartRequest@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:436:5
+Line: 1859, column: 0
+Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1859"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1859:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+NetworkResponseListener.prototype._getSecurityInfo<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:516:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+onStartRequest@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:436:5
+Line: 1859, column: 0
+console.error: 
+1520890449800	geckodriver	INFO	geckodriver 0.19.1
+  Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1859"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1859:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+NetworkResponseListener.prototype._getSecurityInfo<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:516:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+onStartRequest@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:436:5
+Line: 1859, column: 0
+Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1859"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1859:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+_onComplete@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:641:5
+onStreamClose@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:598:7
+onInputStreamReady@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:689:7
+Line: 1859, column: 0
+console.error: 
+  Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1859"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1859:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+_onComplete@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:641:5
+onStreamClose@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:598:7
+onInputStreamReady@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:689:7
+Line: 1859, column: 0
+Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1859"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1859:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+_onComplete@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:641:5
+onStreamClose@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:598:7
+onInputStreamReady@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:689:7
+Line: 1859, column: 0
+console.error: 
+  Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1859"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1859:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+_onComplete@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:641:5
+onStreamClose@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:598:7
+onInputStreamReady@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:689:7
+Line: 1859, column: 0
+1520890449806	geckodriver	INFO	Listening on 127.0.0.1:42627
+WebConsolePanel open failed. undefined: this.browserRequire is not a function
+console.error: 
+  WebConsolePanel open failed. undefined: this.browserRequire is not a function
+  Message: TypeError: this.browserRequire is not a function
+  Stack:
+    _createSourceMapService@resource://devtools/shared/base-loader.js -> resource://devtools/client/framework/toolbox.js:569:19
+get sourceMapURLService@resource://devtools/shared/base-loader.js -> resource://devtools/client/framework/toolbox.js:656:22
+init/<@resource://devtools/shared/base-loader.js -> resource://devtools/client/webconsole/new-console-output/new-console-output-wrapper.js:151:11
+init@resource://devtools/shared/base-loader.js -> resource://devtools/client/webconsole/new-console-output/new-console-output-wrapper.js:41:12
+init@resource://devtools/shared/base-loader.js -> resource://devtools/client/webconsole/new-webconsole.js:88:11
+observe@resource://gre/modules/AsyncShutdown.jsm:535:9
+
+*************************
+A coding exception was thrown in a Promise resolution callback.
+See https://developer.mozilla.org/Mozilla/JavaScript_code_modules/Promise.jsm/Promise
+
+Full message: TypeError: panel is undefined
+Full stack: onLoad/<@resource://devtools/shared/base-loader.js -> resource://devtools/client/framework/toolbox.js:1683:13
+process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+observe@resource://gre/modules/AsyncShutdown.jsm:535:9
+
+*************************
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1520890450948	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--devtools" "-profile" "/tmp/rust_mozprofile.WFDRw9sS03sh"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1520890453169	Marionette	INFO	Enabled via --marionette
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+JavaScript error: resource://shield-recipe-client/lib/ShieldRecipeClient.jsm, line 70: TypeError: log is undefined
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/shared/async-storage.js, line 66: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1520890459208	geckodriver	INFO	geckodriver 0.19.1
+1520890459213	geckodriver	INFO	Listening on 127.0.0.1:41325
+1520890498593	geckodriver	INFO	geckodriver 0.19.1
+1520890498598	geckodriver	INFO	Listening on 127.0.0.1:55533
+1520890499723	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--devtools" "-profile" "/tmp/rust_mozprofile.NtXt24YP0fZv"
+1520890500690	Marionette	INFO	Enabled via --marionette
+1520890504283	Marionette	INFO	Listening on port 35049
+1520890504350	Marionette	WARN	TLS certificate errors will be ignored for this session
+Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1859"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1859:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+NetworkResponseListener.prototype._getSecurityInfo<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:516:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+onStartRequest@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:436:5
+Line: 1859, column: 0
+console.error: 
+  Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1859"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1859:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+NetworkResponseListener.prototype._getSecurityInfo<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:516:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+onStartRequest@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:436:5
+Line: 1859, column: 0
+Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1859"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1859:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+NetworkResponseListener.prototype._getSecurityInfo<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:516:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+onStartRequest@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:436:5
+Line: 1859, column: 0
+console.error: 
+  Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1859"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1859:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+NetworkResponseListener.prototype._getSecurityInfo<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:516:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+onStartRequest@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:436:5
+Line: 1859, column: 0
+Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1859"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1859:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+_onComplete@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:641:5
+onStreamClose@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:598:7
+onInputStreamReady@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:689:7
+Line: 1859, column: 0
+console.error: 
+  Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1859"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1859:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+_onComplete@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:641:5
+onStreamClose@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:598:7
+onInputStreamReady@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:689:7
+Line: 1859, column: 0
+Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1859"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1859:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+_onComplete@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:641:5
+onStreamClose@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:598:7
+onInputStreamReady@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:689:7
+Line: 1859, column: 0
+console.error: 
+  Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1859"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1859:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+_onComplete@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:641:5
+onStreamClose@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:598:7
+onInputStreamReady@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:689:7
+Line: 1859, column: 0
+1520890505618	geckodriver	INFO	geckodriver 0.19.1
+1520890505624	geckodriver	INFO	Listening on 127.0.0.1:35453
+WebConsolePanel open failed. undefined: this.browserRequire is not a function
+console.error: 
+  WebConsolePanel open failed. undefined: this.browserRequire is not a function
+  Message: TypeError: this.browserRequire is not a function
+  Stack:
+    _createSourceMapService@resource://devtools/shared/base-loader.js -> resource://devtools/client/framework/toolbox.js:569:19
+get sourceMapURLService@resource://devtools/shared/base-loader.js -> resource://devtools/client/framework/toolbox.js:656:22
+init/<@resource://devtools/shared/base-loader.js -> resource://devtools/client/webconsole/new-console-output/new-console-output-wrapper.js:151:11
+init@resource://devtools/shared/base-loader.js -> resource://devtools/client/webconsole/new-console-output/new-console-output-wrapper.js:41:12
+init@resource://devtools/shared/base-loader.js -> resource://devtools/client/webconsole/new-webconsole.js:88:11
+observe@resource://gre/modules/AsyncShutdown.jsm:535:9
+
+*************************
+A coding exception was thrown in a Promise resolution callback.
+See https://developer.mozilla.org/Mozilla/JavaScript_code_modules/Promise.jsm/Promise
+
+Full message: TypeError: panel is undefined
+Full stack: onLoad/<@resource://devtools/shared/base-loader.js -> resource://devtools/client/framework/toolbox.js:1683:13
+process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+observe@resource://gre/modules/AsyncShutdown.jsm:535:9
+
+*************************
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1520890506749	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--devtools" "-profile" "/tmp/rust_mozprofile.IQpy5p0nZ8Bw"
+1520890507834	Marionette	INFO	Enabled via --marionette
+1520890511101	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/SnippetsFeed.jsm :: uninit :: line 125"  data: no] Stack trace: uninit()@resource://activity-stream/lib/SnippetsFeed.jsm:125 < onAction()@resource://activity-stream/lib/SnippetsFeed.jsm:141 < _middleware/</<()@resource://activity-stream/lib/Store.jsm:51 < Store/this[method]()@resource://activity-stream/lib/Store.jsm:30 < uninit()@resource://activity-stream/lib/Store.jsm:153 < uninit()@resource://activity-stream/lib/ActivityStream.jsm:278 < uninit()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:80 < shutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:196 < callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:4406 < observe()@resource://gre/modules/addons/XPIProvider.jsm:2270
+1520890511247	Marionette	INFO	Listening on port 37091
+JavaScript error: resource://shield-recipe-client/lib/ShieldRecipeClient.jsm, line 70: TypeError: log is undefined
+1520890511270	Marionette	WARN	TLS certificate errors will be ignored for this session
+1520890511407	geckodriver	INFO	geckodriver 0.19.1
+1520890511412	geckodriver	INFO	Listening on 127.0.0.1:42233
+1520890512526	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--devtools" "-profile" "/tmp/rust_mozprofile.oZvcHzfTRWg5"
+1520890535391	geckodriver	INFO	geckodriver 0.19.1
+1520890535397	geckodriver	INFO	Listening on 127.0.0.1:33245
+1520890536515	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--devtools" "-profile" "/tmp/rust_mozprofile.crftzXragJxA"
+1520890537548	Marionette	INFO	Enabled via --marionette
+1520890541343	Marionette	INFO	Listening on port 42263
+1520890541432	Marionette	WARN	TLS certificate errors will be ignored for this session
+1520890816357	geckodriver	INFO	geckodriver 0.19.1
+1520890816363	geckodriver	INFO	Listening on 127.0.0.1:42727
+1520890817493	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--devtools" "-profile" "/tmp/rust_mozprofile.36vlpFfEohGT"
+1520890818531	Marionette	INFO	Enabled via --marionette
+1520890822257	Marionette	INFO	Listening on port 35443
+1520890822311	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1520890995080	geckodriver	INFO	geckodriver 0.19.1
+1520890995086	geckodriver	INFO	Listening on 127.0.0.1:35879
+1520890996195	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--devtools" "-profile" "/tmp/rust_mozprofile.WdSm6aK1ZiMx"
+1520890997106	Marionette	INFO	Enabled via --marionette
+1520891000775	Marionette	INFO	Listening on port 40585
+1520891000823	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
