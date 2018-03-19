@@ -58,7 +58,7 @@ Attritbutes:
         # Dance
         
         self.load_sfile()
-        self.main_loop()
+        
 
     def load_sfile(self):
         with open(self.sfile, 'r+') as f:
@@ -93,7 +93,7 @@ Attritbutes:
         while True:
             self.clear_screen()
             self.print_screen()
-            print('Current vdev = ', self.vdev)
+            print('Current vdev: {}'.format(self.vdev))
             self.print_main_menu()
 
             cmd = raw_input("\nEnter a command: ").strip().lower()
@@ -101,9 +101,11 @@ Attritbutes:
             if cmd == 'p':
                 self.clear_screen()
                 self.policies = self.get_policies()
+
             elif cmd == 'v':
                 self.clear_screen()
                 self.set_vdev()
+
             elif cmd == 'r':
                 try:
                     thread.start_new_thread(self.rewrites, (self.get_rewrite_urls(),))
@@ -113,14 +115,9 @@ Attritbutes:
                     print(type(e))
                     print(e)
                     print("Something went wrong! Try changing some data and continue.")
+
             elif cmd == 'n':
-                try:
-                    thread.start_new_thread(self.new_apps, (self.get_na_urls(),))
-                except Exception as e:
-                    self.clear_screen()
-                    traceback.print_exc()
-                    print(type(e))
-                    print(e)
+                    self.new_apps(self.get_na_urls())
 
             elif cmd == 'q':
                 self.save_sfile()
@@ -187,9 +184,7 @@ Attritbutes:
         return tmp_pols
         
     def get_na_urls(self):
-        urls = [('http://' + u + ':' + self.PASSWORD + '@' + self.vdev +
-            '.equityins.net/cgi-bin/qq.entry.py?agent=' + u )
-            for u in self.USRS]
+        urls = ['http://{}:{}@{}.equityins.net/cgi-bin/qq.entry.py?agent={}'.format(u,self.PASSWORD,self.vdev[0],u) for u in self.USRS]
         return urls
 
     def get_rewrite_urls(self):
@@ -222,8 +217,7 @@ Attritbutes:
             driver.get(u)
             driver.find_element(By.XPATH, '//a[text()="Quote a rewrite with change"]').click()
 
-    def new_apps(self):
-        urls = self.get_na_urls
+    def new_apps(self, urls):
         for u in urls:
             options = Options()
             options.add_argument("--devtools")
@@ -241,7 +235,8 @@ Attritbutes:
             
 
 if __name__ == '__main__':
-    App()
+    a = App()
+    a.main_loop()
 
 
 

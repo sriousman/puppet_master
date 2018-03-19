@@ -76,7 +76,7 @@ class TestAddressModal(unittest.TestCase):
     def setUp(self):
         self.url = "http://5121:test@master.dev.equityins.net/cgi-bin/qrw.entry.py?mode=rewrite&key=N35062747&agent=5121&expdate=071318"
         options = Options()
-        options.add_argument("--devtools")
+        options.add_argument("--headless")
         self.driver = webdriver.Firefox(firefox_options=options)
         self.driver.implicitly_wait(10)
         self.driver.get(self.url)
