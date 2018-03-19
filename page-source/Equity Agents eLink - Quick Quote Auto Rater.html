@@ -1,0 +1,789 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+    <meta http-equiv="refresh" content="3600;url=/index.html" />
+    <meta http-equiv="pragma" content="no-cache" />
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="/styles/std.css" />
+        <link rel="stylesheet" type="text/css" href="/styles/common.entry.css" />
+        <link rel="stylesheet" type="text/css" href="/styles/popup.form.css" />
+        <link rel="stylesheet" type="text/css" href="/yui/button/assets/skins/sam/button.css" />
+        <link rel="stylesheet" type="text/css" href="/yui/container/assets/skins/sam/container.css" />
+        <link rel="stylesheet" type="text/css" href="/themes/equity/jquery-ui.css" />
+        <link rel="stylesheet" type="text/css" href="/themes/equity/jquery-ui.theme.css" />
+        
+        <script type="text/javascript" src="/yui/yuiloader-dom-event/yuiloader-dom-event.js"></script>
+        <script type="text/javascript" src="/scripts/eiLib.js"></script>
+        <script type="text/javascript" src="/components/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="/components/jquery-ui/jquery-ui.js"></script>
+        <script type="text/javascript" src="/components/jquery-placeholder/jquery.placeholder.js"></script>
+        <script type="text/javascript" src="/components/jquery-mask-plugin/dist/jquery.mask.js"></script>
+        <script type="text/javascript" src="/scripts/init.js"></script>
+        <script type="text/javascript" src="/scripts/form.js"></script>
+        <script type="text/javascript" src="/scripts/zip.code.js"></script>
+        <script type="text/javascript" src="/scripts/contact.form.js"></script>
+        <script type="text/javascript" src="/scripts/qq.entry.OK.js"></script>
+        <script type="text/javascript" src="/scripts/qq.entry.js"></script>
+        <script type="text/javascript" src="/scripts/js_cleanup.js"></script>
+        <script type="text/javascript" src="/yui/utilities/utilities.js"></script>
+        <script type="text/javascript" src="/yui/button/button-min.js"></script>
+        <script type="text/javascript" src="/yui/container/container-min.js"></script>
+        <script type="text/javascript" src="/yui/json/json-min.js"></script>
+        <script type="text/javascript" src="/scripts/pgressbar.js"></script>
+        <script type="text/javascript" src="https://seal.thawte.com/getthawteseal?host_name=agents.equityins.net&amp;size=S&amp;lang=en"></script>
+        <script type="text/javascript">
+                function openQuote() {
+                    updateInsEff();
+                    chgInsTrans( gE( "insTrans" ) );
+                                    }
+                
+	Vehicle.coldeds["250"] = "250";
+	Vehicle.coldeds["500"] = "500";
+	Vehicle.coldeds["1000"] = "1000";
+	Vehicle.coldeds["1500"] = "1500";
+	Vehicle.coldeds["2000"] = "2000";
+	Vehicle.otcdeds["250"] = "250";
+	Vehicle.otcdeds["500"] = "500";
+	Vehicle.otcdeds["1000"] = "1000";
+	Vehicle.otcdeds["1500"] = "1500";
+	Vehicle.otcdeds["2000"] = "2000";
+	var mvrcodes = {"25900": "21400", "15600": "81120", "22500": "68710", "15900": "32100", "21000": "31220", "21900": "37100", "14700": "12320", "13400": "37100", "11300": "     ", "16600": "     ", "10100": "     ", "15200": "12100", "12400": "84130", "21400": "31160", "17400": "12410", "13000": "     ", "27200": "     ", "19400": "82210", "14100": "33330", "17200": "12100", "20900": "31210", "12700": "35300", "10200": "     ", "24300": "     ", "16300": "36100", "18000": "     ", "25100": "12410", "20200": "82910", "13600": "     ", "18800": "     ", "14500": "     ", "17800": "34510", "11100": "22010", "26200": "     ", "19300": "12510", "11900": "     ", "20400": "82110", "12300": "51110", "10800": "22720", "21100": "31100", "19200": "12500", "11800": "58110", "12900": "35350", "11200": "     ", "17700": "34410", "17000": "51210", "17900": "84130", "25000": "     ", "14200": "35110", "16700": "     ", "15100": "12120", "26600": "     ", "21500": "     ", "24100": "89010", "13300": "37200", "20700": "13210", "24900": "66110", "19700": "38100", "11600": "84140", "18400": "53210", "25800": "     ", "26000": "21400", "27300": "34100", "13900": "     ", "12500": "     ", "24800": "66110", "19600": "61330", "24200": "61100", "15400": "13110", "18100": "     ", "16400": "36100", "21200": "     ", "20100": "67210", "11000": "     ", "24700": "21400", "12000": "     ", "17300": "     ", "10900": "22010", "18900": "     ", "25400": "68710", "26900": "     ", "22700": "84320", "19500": "82810", "18600": "     ", "25700": "     ", "10300": "     ", "12600": "37120", "14300": "34510", "27000": "     ", "15000": "     ", "24000": "52100", "13200": "     ", "16800": "     ", "11500": "51110", "18500": "13410", "16000": "32110", "14600": "12370", "15800": "32210", "10400": "     ", "16100": "32150", "18200": "52120", "17600": "84120", "22800": "84310", "21300": "31110", "25500": "     ", "20000": "38100", "19900": "38130", "22600": "21140", "13800": "35340", "21635": "E0001", "19100": "82010", "12100": "22600", "11700": "51110", "23800": "     ", "24400": "89010", "24500": "61100", "20800": "66010", "17100": "12110", "18700": "     ", "25200": "     ", "20600": "34410", "15700": "33210", "20300": "67110", "16500": "84120", "21700": "84110", "13500": "37410", "20500": "71110", "16900": "12410", "11400": "51110", "15300": "84160", "25600": "88310", "14800": "     ", "13100": "35410", "24600": "     ", "16200": "     ", "17500": "12110", "18300": "     ", "14000": "33410", "14900": "     ", "19800": "     ", "12800": "82520", "26500": "34100", "10500": "     ", "25300": "     ", "23900": "52150", "26400": "     ", "26100": "12410", "13700": "     ", "27100": "     ", "14400": "35110", "21800": "12410", "19000": "     ", "12200": "31610"}
+	var ratecodes = [["Y", "10/01/2017", ["+BUS", "+LIC", "+MVR", "+VL", "-BG", "-DT", "-HO", "-MAX", "-MC", "-PD", "-REN", "-TR", "AD", "BI", "COLL", "COMP", "DNS", "DRMF", "DRMM", "DRSF", "DRSM", "EQ", "FEE", "MAK", "MOD", "MP", "PAY1", "PAY3", "PAY4", "PAY6", "PAY7", "PAYE", "PAYP", "PD", "PTS", "RENT", "SYM", "TERR", "TL", "UMBI", "VEHA", "VYR"]]];
+
+	var nkey = null;
+
+	--></script>
+        <title>Equity Agents eLink - Quick Quote Auto Rater</title>
+</head>
+
+  <body class="yui-skin-sam">
+    <div id="bodyheader">
+  <div style="text-align: center;">
+    <img src="/images/agentselink-tn.jpg" alt="Agents e link" width="291" height="33" style="margin: 0 auto;" />
+    <h1>
+      <span style="color: #900;"> OK - vdev:master - </span>
+      <span>Quick Quote Auto Rater</span>
+    </h1>
+  </div>
+  <div>
+    <div></div>
+    <div id="navmenu">
+<!--[if lte IE 8]>
+  <img src="/images/bg_menu.png" id="navmenubg" style="top:0; width:100%; height:100%; " />
+  <ul id="nav" style="position:relative; top:-50px; ">
+<![endif]-->
+<!--[if gte IE 9]>
+  <ul id="nav">
+<![endif]-->
+<!--[if !IE]>-->
+  <ul id="nav">
+<!--<![endif]-->
+    <li id="home"><a href="/cgi-bin/bbw.sh?PGM=BUILD_INDEX_PAGE" title="Home(o)">Home</a>  </li>
+    <li><a href="#" title="Review policy information. Submit information and payments.">Policy Services</a>
+      <ul>
+        <li><a href="/cgi-bin/qq.manage.py" title="New Business Quotes &amp; Application Printing">New Quotes and Apps</a>
+        </li>
+        <li><a href="/cgi-bin/bbw.sh?PGM=BUILD_INQUIRY_PAGE" title="Policies by name or number. Respond to underwriting memos, make payments, print ID cards, submit endorsements.">Inquiry</a>
+        </li>
+        <li><a href="/cgi-bin/bbw.sh?PGM=RENEWALS" title="Policies quoted for renewal during the last 60 days. Make renewal payments.">Renewal&nbsp;Quotes</a>
+        </li>
+        <li><a href="/cgi-bin/bbw.sh?PGM=CANCELS" title="Cancellation notices on policies for non-payment of installment billing.">Non&minus;Pay&nbsp;Cancellations</a>
+        </li>
+        <li><a href="/cgi-bin/bbw.sh?PGM=MEMOLIST" title="Underwriting Memos either giving or requesting information.">Memos</a>
+        </li>
+        <li><a href="/cgi-bin/bbw.sh?PGM=ENDORSEMENTS" title="Records and status of your uploaded endorsements.">Endorsements</a>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#" title="Transactions">Transactions</a>
+      <ul>
+        <li><a href="/cgi-bin/bbw.sh?PGM=BATCHES" title="Records of your uploaded payments.">Payment&nbsp;Batches</a>
+        </li>
+        <li><a href="/cgi-bin/bbw.sh?PGM=CTS" title="Policy that have cancelled.">Processed&nbsp;Cancellations</a>
+        </li>
+        <li><a href="/cgi-bin/bbw.sh?PGM=DECS" title="Policy declarations that have been mailed to the insured.">Processed&nbsp;Dec&nbsp;Pages</a>
+        </li>
+        <li><a style="color:red;" href="/cgi-bin/bbw.sh?PGM=DNOC" title="Direct Cancel Notices.">Direct&nbsp;Cancel&nbsp;Notices</a>
+        </li>
+        <li><a style="color:red;" href="/cgi-bin/bbw.sh?PGM=NONR" title="Non-Renewals.">Non-Renewals</a>
+        </li>
+        <li><a style="color:red;" href="/cgi-bin/bbw.sh?PGM=REIN" title="Reinstatements.">Reinstatements</a>
+        </li>
+        <li><a href="/cgi-bin/bbw.sh?PGM=TFOD" title="Combined list of transactions for one day.">T-FOD</a>
+        </li>
+        <li><a href="/cgi-bin/bbw.sh?PGM=DISPLAY.EPAY.HISTORY" title="Uploaded Payment History.">Uploaded&nbsp;Payment&nbsp;History</a>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#" title="Printable forms.">Forms</a>
+      <ul>
+        <li><a href="/forms/cc.pdf" title="Credit Card Payment Authorization">Credit&nbsp;Card&nbsp;Authorization</a>
+        </li>
+        <li><a href="/forms/eftOK.pdf" title="Authorization Agreement for Direct Payments">EFT&nbsp;Authorization</a>
+        </li>
+        <li><a href="/forms/excldrvOK.pdf" title="Exclusion of Named Driver">Driver&nbsp;Exclusion</a>
+        </li>
+        <li><a href="/cgi-bin/bbw.sh?PGM=SVC" title="ID cards for New Business whose policy is not yet on the system.">New&nbsp;ID&nbsp;Cards</a>
+        </li>
+        <li><a href="/cgi-bin/okins_letter.py" title="Oklahoma Compulsory Insurance Verification letter.">OK&nbsp;OCIVS&nbsp;Letter</a>
+        </li>
+        <li><a href="/forms/physician.pdf" title="Physician's Statement">Physician's&nbsp;Statement</a>
+        </li>
+        <li><a href="/forms/quesOK.pdf" title="Applicant Questionnaire">Questionnaire</a>
+        </li>
+        <li><a href="/forms/stmtOK.pdf" title="Applicant's Statement - parent/guardian signature required for named insured of minor age">Statement</a>
+        </li>
+        <li><a href="/forms/umOK.pdf" title="Uninsured Motorist Coverage Law">Uninsured&nbsp;Motorist</a>
+        </li>
+	<li><a href="/forms/vehinspect.pdf" title="Vehicle Inspection Report">Vehicle&nbsp;Inspection</a>
+        </li>
+        <li><a href="/forms/polchg.pdf" title="Policy Change Request">Policy&nbsp;Change&nbsp;Request</a>
+        </li>
+        <li><a href="/forms/bappOK.pdf" title="Application">Application&nbsp;</a>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#" title="Information and support for agents.">Agent Services</a>
+      <ul>
+        <li><a href="/cgi-bin/bbw.sh?PGM=BULLETINS" title="Bulletins sent to agents during the last 12 months.">Bulletins</a>
+        </li>
+        <li><a href="/forms/ContactsOK.pdf" title="Equity Contacts">Equity Contacts</a>
+        </li>
+        <li><a href="/forms/guidelinesOK.pdf" title="Underwriting Guidelines">Underwriting&nbsp;Guidelines</a>
+        </li>
+        <li><a href="/cgi-bin/bbw.sh?PGM=MGRSECURITY" title="Statement Inquiry">Statement&nbsp;Inquiry</a>
+        </li>
+        <li><a href="/cgi-bin/bbw.sh?PGM=ES.DISPLAY" title="eSignature Agreement Page">eSignature Agreement</a>
+        </li>
+        <li><a href="/cgi-bin/bbw.sh?PGM=CLAIMS.OCDISPLAY" title="Open Claims">Open Claims</a>
+        </li>
+    	<li><a href="/cgi-bin/bbw.sh?PGM=CLAIMS.CHDISPLAY" title="Claims History">Claims History</a>
+	    </li>
+        
+      </ul>
+    </li>
+  </ul>
+</div>
+  </div>
+  <div id="flash-messages"></div>
+</div>
+    <div id="content">
+    <div id="main">
+      <div id="repwrap">
+        <div id="report" style="display: none;">
+          
+            <span style="display: none;" id="helpcvgMed">Medical payments or PIP medical/hospital</span>
+          
+          
+            <span style="display: none;" id="helpcvgWl">Work Loss coverage</span>
+          
+          
+            <span style="display: none;" id="helpmsgVinstatusNANF">The VIN you entered is not verifiable.  Please select the vehicle make and model and send a copy of the registration to Equity.</span>
+          
+          
+            <span style="display: none;" id="helpschool">College Graduate - Requires a college or university transcript showing that a degree was earned with a grade average of B or higher (on a 4-point system this is an average of 3 points or higher). (Discount may apply.)</span>
+          
+          
+            <span style="display: none;" id="helpage">MM/DD/YYYY or driver age</span>
+          
+          
+            <span style="display: none;" id="helpaltzip">An alternate garaging zip code is allowed for one vehicle per policy.  If more than one vehicle has an alternate garaging address, contact UW for instructions.</span>
+          
+          
+            <span style="display: none;" id="helpbus">Business Use (refer to UW Guide for acceptability)</span>
+          
+          
+            <span style="display: none;" id="helpcolded">Deductible for collision coverage</span>
+          
+          
+            <span style="display: none;" id="helpcvgAd">Accidental death coverage</span>
+          
+          
+            <span style="display: none;" id="helpcvgLiab">Liability limit</span>
+          
+          
+            <span style="display: none;" id="helpcvgUm">Uninsured motorist limit (Insured must sign UM rejection/selection)</span>
+          
+          
+            <span style="display: none;" id="helpcvgumty">Added-On UM Coverage pays damages in addition to the at-fault driver's liability coverage.  Reduced UM Coverage pays damages for the difference between the at-fault driver's liability coverage and the insured's UM coverage.</span>
+          
+          
+            <span style="display: none;" id="helpdrViolations">View or change driver violations</span>
+          
+          
+            <span style="display: none;" id="helpdrivercourse">Accident prevention course (discount may apply)</span>
+          
+          
+            <span style="display: none;" id="helpequip">ACV of additional equipment coverage</span>
+          
+          
+            <span style="display: none;" id="helpfirstname">Driver's first name.  List named insured drivers before other drivers.</span>
+          
+          
+            <span style="display: none;" id="helpinsEff">Quote for specified effective date: MM/DD/YYYY</span>
+          
+          
+            <span style="display: none;" id="helpinsHome">Does insured own their home? (discount may apply)</span>
+          
+          
+            <span style="display: none;" id="helpinsName">Name required to save quote</span>
+          
+          
+            <span style="display: none;" id="helpinsPolNo">Active policies with 5 vehicles allow multi-car credit and waive Equity fees.</span>
+          
+          
+            <span style="display: none;" id="helpinsTrCr">Number of days since insurance lapsed</span>
+          
+          
+            <span style="display: none;" id="helpinsTrans">Consecutive months of prior insurance (discount may apply)</span>
+          
+          
+            <span style="display: none;" id="helpinvaliddrlic">Driver's license is NOT valid (suspended/revoked/expired) and has been invalid for the last 18 months. (5 points will be charged.)</span>
+          
+          
+            <span style="display: none;" id="helpmake">Vehicle Make</span>
+          
+          
+            <span style="display: none;" id="helpmaritalstatus">Select Married if the driver is married and residing with their spouse.</span>
+          
+          
+            <span style="display: none;" id="helpmodel">Vehicle Model</span>
+          
+          
+            <span style="display: none;" id="helpmsgVinstatusBAD">The VIN you entered is not valid.  Please re-enter the VIN.\n\nIf you cannot provide a valid VIN, Equity will need acopy of the vehicle registration.</span>
+          
+          
+            <span style="display: none;" id="helpmsgVinstatusBADNF">The VIN you entered is not valid.  Please re-enter the VIN or select the vehicle make and model.\n\nIf you cannot provide a valid VIN, Equity will need a copy of the vehicle registration.</span>
+          
+          
+            <span style="display: none;" id="helpmsgVinstatusGOODNF">The VIN you entered is valid, but matching vehicle information was not found in our database.  Please select the vehicle make and model.</span>
+          
+          
+            <span style="display: none;" id="helpmsgVinstatusINC">This vehicle was shipped incomplete from the factory and may have after-market equipment.\nWARNING: Comp and Coll will not apply to this equipment unless it is listed.</span>
+          
+          
+            <span style="display: none;" id="helpmsgVinstatusINCNF">The VIN you entered is valid, but matching vehicle information was not found in our database.  Please select the vehicle make and model.\n\nThis vehicle was shipped incomplete from the factory and may have after-market equipment.\nWARNING: Comp and Coll will not apply to this equipment unless it is listed.</span>
+          
+          
+            <span style="display: none;" id="helpmsgViolTooNew">Invalid date.  Please re-enter.</span>
+          
+          
+            <span style="display: none;" id="helpmsgViolTooOld">Invalid date.  If violation is over 36 months old, do not enter.</span>
+          
+          
+            <span style="display: none;" id="helpnomvr">Driving record is NOT verifiable through MVR for previous 36 month period or driver has an International license. Does not apply to drivers 18 and under. (points may be charged)</span>
+          
+          
+            <span style="display: none;" id="helpotcded">Deductible for other than collision coverage</span>
+          
+          
+            <span style="display: none;" id="helppendingRateChange">Options marked ^ are affected by a pending rate change and may not be available for the selected effective date.</span>
+          
+          
+            <span style="display: none;" id="helprent">Extended transportation expenses coverage</span>
+          
+          
+            <span style="display: none;" id="helpsalv">Check the box if the vehicle title is salvaged, branded, or rebuilt.</span>
+          
+          
+            <span style="display: none;" id="helpsalvAlert">Liability Coverage Only\n\nfor vehicles with \nsalvaged, branded, or rebuilt titles.</span>
+          
+          
+            <span style="display: none;" id="helpsr22">Driver's license must be issued in OK for SR22.</span>
+          
+          
+            <span style="display: none;" id="helpsymbol">ISO Symbol</span>
+          
+          
+            <span style="display: none;" id="helptow">Towing &amp; Labor coverage</span>
+          
+          
+            <span style="display: none;" id="helpvin">Vehicle Identification Number</span>
+          
+          
+            <span style="display: none;" id="helpx4">Four-wheel drive vehicle</span>
+          
+          
+            <span style="display: none;" id="helpyear">Vehicle Year</span>
+          
+          
+            <span style="display: none;" id="helpzipCode">Garaging ZIP code</span>
+          
+        </div>
+      </div>
+      <form method="post" id="raterform" action="bbw.sh">
+        <fieldset style="display: none;">
+        <input id="mode" name="mode" type="hidden" value="ELINK" />
+        <input name="pgm" id="pgm" value="QQ.RATE" type="hidden" />
+        
+        <input name="agent" id="agent" type="hidden" value="5121" />
+        <input name="serverdate" id="serverdate" type="hidden" value="03/19/18" />
+        
+        
+        <input name="del_vir" id="del_vir" value="false" type="hidden" />
+        </fieldset>
+        <!-- general -->
+        <fieldset id="general">
+          <legend>General Information</legend>
+          <div style="clear: both;">
+            <div style="float: left; width: 55%;">
+              <label for="insName">Last Name</label>
+              <input id="insName" name="insName" maxlength="30" onfocus="focusObj( this );" onchange="this.value=this.value.toUpperCase()" onblur="blurObj( this );" type="text" value="" />
+              <img id="contact-info" src="/images/rolocard.png" title="Contact Information" alt="Contact Information" />
+              <br />
+              <label for="street_zip_base">Street Addr.
+                     <abbr title="Zip Code">Zip</abbr></label>
+              <span class="input">
+                <input name="street_zip_base" id="street_zip_base" size="5" maxlength="10" onfocus="focusObj( this );return true;" onblur="return chgZipCode.apply( this, [ 'street_zip_span', 'street_zip', false ] );" type="text" style="" value="" />
+                <span id="street_zip_span"></span>
+                <select id="street_zip" name="street_zip" style="display: none;">
+                    <option />
+                </select>
+                
+              </span>
+              <br />
+              <label for="insHome">Residence</label>
+              <select id="insHome" name="insHome" onfocus="focusObj( this ); return true" onblur="blurObj( this );">
+                <option selected="selected" value="R">Rent/Lease</option>
+                <option value="O">Own</option>
+                </select>
+              <br />
+
+              <label for="insTrans">Prior Insurance</label>
+              <select id="insTrans" name="insTrans" onfocus="focusObj( this ); return true" onblur="blurObj( this );" onchange="chgInsTrans( this ); return true">
+                <option value="0">None</option>
+                <option value="1">Less than 6 months</option>
+                <option value="2">6 months or more</option>
+                </select>
+              <select id="insTrCr" name="insTrCr" style="visibility: hidden;" onfocus="focusObj( this ); return true" onblur="blurObj( this );">
+                <option value="0">No Lapse</option>
+                <option value="1">Lapse &lt;= 30 days</option>
+                <option value="2">Lapse &gt; 30 days</option>
+                </select>
+              <br />
+              <label id="lblPolNo" for="insPolNo">Other Equity Policy #</label>
+              <input id="insPolNo" name="insPolNo" size="10" onfocus="focusObj( this ); return true;" onblur="blurObj( this );" onchange="validatePol( this ); return true;" type="text" value="" />
+              <br />
+              <label for="agencyFee">Agency Fee</label>
+              <input id="agencyFee" name="agencyFee" size="4" onchange="return chgAgencyFee.apply( this );" type="text" value="" />
+            </div>
+            <label for="insEff">Effective Date</label>
+            <input id="insEff" name="insEff" size="10" onfocus="focusObj( this ); return true;" onchange="return updateInsEff();" onblur="blurObj( this );" type="text" value="03/19/18" />
+            
+            <br />
+            <label for="cvgLiab">Liability Limits</label>
+            <select id="cvgLiab" name="cvgLiab" onfocus="focusObj( this ); return true;" onchange="updateLiabUm();" onblur="blurObj( this );">
+              <option selected="selected" value="25/50/25">25/50/25</option>
+              </select>
+            <br />
+            <label for="cvgUm"><acronym title="Uninsured Motorist">UM</acronym> Limits</label>
+            <select id="cvgUm" name="cvgUm" onfocus="focusObj( this ); return true;" onchange="updateLiabUm();" onblur="blurObj( this );">
+              <option value="None">None</option>
+              <option selected="selected" value="25/50">25/50</option>
+            </select>
+            
+            
+            <br />
+            
+            <label for="cvgMed">MedPay Limits</label>
+            <select id="cvgMed" name="cvgMed" onfocus="focusObj( this ); return true;" onblur="blurObj( this );">
+              <option value="None">None</option>
+              <option value="500">500</option>
+              <option value="1000">1000</option>
+              <option value="2000">2000</option>
+              <option value="5000">5000</option>
+              </select>
+            <br />
+            
+            <span>
+              <label for="cvgAd"><abbr title="Accidental">Acc.</abbr> Death</label>
+              <select id="cvgAd" name="cvgAd" onfocus="focusObj( this ); return true;" onblur="blurObj( this );">
+                <option value="None">None</option>
+                <option value="2000">2000</option>
+                </select>
+              <br />
+            </span>
+            
+          </div>
+        </fieldset><!-- id="general" -->
+
+        <!-- drivers -->
+        <fieldset id="drivers">
+          <legend>Drivers</legend>
+          <table id="drivers-table">
+            <thead>
+              <tr>
+                <th><abbr title="Delete">Del</abbr></th>
+                <th>First Name</th>
+                <th>Birthdate/Age</th>
+                <th>Sex</th>
+                <th>Marital<br />Status</th>
+
+                
+                <th>No<br /><acronym title="Motor Vehicle Record">MVR</acronym></th>
+                <th><abbr title="Driver's License">Dr. Lic.</abbr><br /><abbr title="Surcharge">Surchg.</abbr></th>
+                <th>Driver<br />Course</th>
+                
+
+                <th>Violations</th>
+                <th>Rated</th>
+              </tr>
+            </thead>
+            <tfoot><tr><td colspan="10"><hr /></td></tr></tfoot>
+            <tbody id="drivers-tbody">
+              <tr style="display: none;">
+                <td></td>
+              </tr>
+          </tbody></table>
+          <input id="drAdd" name="drAdd" value="Add Driver" onclick="Driver.add( true )" type="button" />
+        </fieldset><!-- id="drivers" -->
+
+        <!-- vehicles -->
+        <fieldset id="vehicles">
+          <legend>Vehicles</legend>
+          <div id="altziphw" style="display: none;">
+            <div class="hd">Alternate Garaging Zip</div>
+            <div class="bd" id="altziphwc">
+                <label for="altzipi">ZIP Code</label>
+                <input id="altzipi" name="altzipi" size="5" maxlength="10" onchange="GetAltZip.apply(this);" onkeyup="GetAltZip.apply(this);" type="text" />
+                <input value="OK" onclick="SetAltZip.apply( gE( 'altzipi' ) );" type="button" />
+                <input value="Cancel" onclick="ResetAltZip.apply( gE( 'altzipi' ) );" type="button" />
+              <table id="altzipt" style="width: 100%;">
+                <tbody id="altziptb"><tr><td></td></tr></tbody>
+              </table>
+            </div>
+          </div><!-- id="altziphw" -->
+
+          <table id="vehicles-table">
+            <tbody id="vehicles-tbody" style="display: none;">
+              <tr style="display: none;"><td></td></tr>
+            </tbody>
+            <tfoot><tr><td colspan="9"><hr /></td></tr></tfoot>
+          </table>
+
+          <input id="vehAdd" name="vehAdd" value="Add Vehicle" onclick="Vehicle.add( true )" type="button" />
+        </fieldset><!-- id="vehicles" -->
+        <fieldset style="display: none;">
+        <select id="tows" style="display: none;">
+          <option value="50">50</option>
+          <option value="50">50</option>
+        </select>
+        <select id="rents" style="display: none;">
+          <option value="30">30</option>
+          <option value="30">30</option>
+        </select>
+        </fieldset>
+        <div id="viohw">
+          <!-- violations template -->
+          <fieldset id="violations" style="border-top-width: 0pt; display: none;">
+            <table id="violations-table">
+              <thead>
+                <tr>
+                  <th><abbr title="Delete">Del</abbr></th>
+                  <th>Date</th>
+                  <th>Type</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody id="violations-tbody">
+                <tr id="le-violations-row" style="display: none;">
+                  <td />
+                  <td>
+                    <label><span>Date</span>
+                    <input type="text" />
+                    </label>
+                  </td>
+                  <td>
+                    <label><span>Type</span>
+                    <input type="text" />
+                    </label>
+                  </td>
+                  <td />
+                </tr>
+                <tr id="violations-row" style="display: none;">
+                  <td>
+                    <label><span>Delete</span>
+                    <input value="X" type="button" />
+                    </label>
+                  </td>
+                  <td>
+                    <label><span>Date</span>
+                    <input type="text" />
+                    </label>
+                  </td>
+                  <td>
+                    <label><span>Type</span>
+                    <select id="vtypes">
+                      <option class="nodesc" value=""></option>
+                      <option class="nodesc" value="10800">accident with pedestrian, at-fault      </option>
+                      <option class="nodesc" value="10900">accident, at-fault                      </option>
+                      <option class="nodesc" value="27200">accident, at-fault non-chargeable       </option>
+                      <option class="nodesc" value="11200">accident, not-at-fault                  </option>
+                      <option class="nodesc" value="23800">aggravated assault with an auto         </option>
+                      <option class="nodesc" value="19100">all other moving violations             </option>
+                      <option class="nodesc" value="24100">all other non-moving violations         </option>
+                      <option class="nodesc" value="19200">allow unlawful operation of vehicle     </option>
+                      <option class="nodesc" value="19300">allow unlicensed driver to drive        </option>
+                      <option class="nodesc" value="10100">altered or forged vin                   </option>
+                      <option class="nodesc" value="11400">assault with a vehicle                  </option>
+                      <option class="nodesc" value="13900">avoiding traffic-control device         </option>
+                      <option class="nodesc" value="21635">bail bond suspension                    </option>
+                      <option class="nodesc" value="14000">bus/car pool/hov - lane violation       </option>
+                      <option class="nodesc" value="21700">careless/imprudent driving/inattentive  </option>
+                      <option class="nodesc" value="14100">changed lanes when unsafe               </option>
+                      <option class="nodesc" value="11500">changing driver in moving vehicle       </option>
+                      <option class="nodesc" value="19400">coasting with gears disengaged          </option>
+                      <option class="nodesc" value="11300">comprehensive claim                     </option>
+                      <option class="nodesc" value="11600">criminal negligence                     </option>
+                      <option class="nodesc" value="14200">crossing center median                  </option>
+                      <option class="nodesc" value="14300">crossing divided highway                </option>
+                      <option class="nodesc" value="14400">crossing yellow line                    </option>
+                      <option class="nodesc" value="22500">defective equipment                     </option>
+                      <option class="nodesc" value="14500">disobey police order                    </option>
+                      <option class="nodesc" value="14600">display altered/counterfeit dl          </option>
+                      <option class="nodesc" value="14700">display another person's dl             </option>
+                      <option class="nodesc" value="12600">disregard no passing zone               </option>
+                      <option class="nodesc" value="11700">disregard of safety                     </option>
+                      <option class="nodesc" value="12700">drive left of center                    </option>
+                      <option class="nodesc" value="25100">drive while lic suspended and/or revoked</option>
+                      <option class="nodesc" value="26400">drivers permit/learners permit          </option>
+                      <option class="nodesc" value="19500">drivers view obstructed                 </option>
+                      <option class="nodesc" value="24200">driving at night without lights         </option>
+                      <option class="nodesc" value="14800">driving on shoulder                     </option>
+                      <option class="nodesc" value="12800">driving on sidewalk or parkway          </option>
+                      <option class="nodesc" value="12900">driving on wrong side of road           </option>
+                      <option class="nodesc" value="14900">driving over fire hose                  </option>
+                      <option class="nodesc" value="26900">driving privilege only license          </option>
+                      <option class="nodesc" value="18100">driving school bus while intoxicated    </option>
+                      <option class="nodesc" value="15000">driving through safety zone             </option>
+                      <option class="nodesc" value="13000">driving too fast for conditions         </option>
+                      <option class="nodesc" value="20900">driving too slow for conditions         </option>
+                      <option class="nodesc" value="21000">driving under minimum speed limit       </option>
+                      <option class="nodesc" value="22600">driving w/o insurance                   </option>
+                      <option class="nodesc" value="10200">driving w/o owners consent              </option>
+                      <option class="nodesc" value="21800">driving while suspended or revoked      </option>
+                      <option class="nodesc" value="15100">driving with an expired license         </option>
+                      <option class="nodesc" value="15200">driving without a license or permit     </option>
+                      <option class="nodesc" value="13100">driving wrong way on one-way            </option>
+                      <option class="nodesc" value="18200">dui alcohol/liquor                      </option>
+                      <option class="nodesc" value="18300">dui drugs/opiates                       </option>
+                      <option class="nodesc" value="24300">duplicate drivers license               </option>
+                      <option class="nodesc" value="23900">dwai                                    </option>
+                      <option class="nodesc" value="10300">educational program required (ard)      </option>
+                      <option class="nodesc" value="11800">eluding police/evading arrest           </option>
+                      <option class="nodesc" value="21100">excessive acceleration                  </option>
+                      <option class="nodesc" value="10400">failure of duty                         </option>
+                      <option class="nodesc" value="13200">failure to control speed                </option>
+                      <option class="nodesc" value="15300">failure to control vehicle              </option>
+                      <option class="nodesc" value="19600">failure to dim headlights               </option>
+                      <option class="nodesc" value="15400">failure to display dl                   </option>
+                      <option class="nodesc" value="11000">failure to exchange info after accident </option>
+                      <option class="nodesc" value="19700">failure to give stop or turn signal     </option>
+                      <option class="nodesc" value="19800">failure to pay toll                     </option>
+                      <option class="nodesc" value="19900">failure to sound horn                   </option>
+                      <option class="nodesc" value="15600">failure to stop for railroad crossing   </option>
+                      <option class="nodesc" value="15700">failure to stop for red light           </option>
+                      <option class="nodesc" value="15800">failure to stop for stop sign           </option>
+                      <option class="nodesc" value="15900">failure to yield (pedestrian)           </option>
+                      <option class="nodesc" value="16000">failure to yield right of way           </option>
+                      <option class="nodesc" value="16100">failure to yield to emergency vehicle   </option>
+                      <option class="nodesc" value="16200">false license or registration           </option>
+                      <option class="nodesc" value="11900">felony involving a motor vehicle        </option>
+                      <option class="nodesc" value="16300">following improperly                    </option>
+                      <option class="nodesc" value="16400">following too close                     </option>
+                      <option class="nodesc" value="20000">giving improper signal                  </option>
+                      <option class="nodesc" value="12000">homicide with a motor vehicle           </option>
+                      <option class="nodesc" value="13300">illegal pass on right                   </option>
+                      <option class="nodesc" value="21900">illegal passing                         </option>
+                      <option class="nodesc" value="18400">illegal transportation of alcohol       </option>
+                      <option class="nodesc" value="26500">illegal turn                            </option>
+                      <option class="nodesc" value="22700">imp. child restraint                    </option>
+                      <option class="nodesc" value="20100">impeding traffic movement               </option>
+                      <option class="nodesc" value="18500">implied consent/refuse breath test      </option>
+                      <option class="nodesc" value="16500">improper driving                        </option>
+                      <option class="nodesc" value="16600">improper entering/leaving turnpike      </option>
+                      <option class="nodesc" value="16700">improper merging into traffic           </option>
+                      <option class="nodesc" value="13400">improper passing                        </option>
+                      <option class="nodesc" value="20200">improper start                          </option>
+                      <option class="nodesc" value="20300">improper towing or pushing of vehicle   </option>
+                      <option class="nodesc" value="27300">improper turn                           </option>
+                      <option class="nodesc" value="16800">improper use of lane                    </option>
+                      <option class="nodesc" value="20400">improperly backing                      </option>
+                      <option class="nodesc" value="21200">increase speed while being passed       </option>
+                      <option class="nodesc" value="27000">inexp. driver (less than 1 yr.)         </option>
+                      <option class="nodesc" value="24400">leave vehicle with engine running       </option>
+                      <option class="nodesc" value="12100">leaving scene  /  hit-and-run           </option>
+                      <option class="nodesc" value="16900">license currently suspended             </option>
+                      <option class="nodesc" value="24500">light violations (head, tail, etc...)   </option>
+                      <option class="nodesc" value="10500">loaned dl to another person             </option>
+                      <option class="nodesc" value="24600">medical payments claim                  </option>
+                      <option class="nodesc" value="24700">motor vehicle inspection viol.          </option>
+                      <option class="nodesc" value="27100">motorcycle drivers license              </option>
+                      <option class="nodesc" value="25700">motorcycle equipment violation          </option>
+                      <option class="nodesc" value="11100">negligent collision                     </option>
+                      <option class="nodesc" value="17000">negligent driving                       </option>
+                      <option class="nodesc" value="17100">no chauffeurs license                   </option>
+                      <option class="nodesc" value="17200">no drivers license                      </option>
+                      <option class="nodesc" value="25800">no motorcycle qualification             </option>
+                      <option class="nodesc" value="17300">obtaining license by misrepresenting    </option>
+                      <option class="nodesc" value="18600">open container violation                </option>
+                      <option class="nodesc" value="17400">operating during life suspension        </option>
+                      <option class="nodesc" value="17500">operating out of class                  </option>
+                      <option class="nodesc" value="17600">operating where prohibited              </option>
+                      <option class="nodesc" value="18700">other alcohol/liquor related violation  </option>
+                      <option class="nodesc" value="18800">other drug/opiate related violation     </option>
+                      <option class="nodesc" value="24800">overheight vehicle                      </option>
+                      <option class="nodesc" value="24900">overlength vehicle                      </option>
+                      <option class="nodesc" value="24000">owi                                     </option>
+                      <option class="nodesc" value="20500">parking on roadway                      </option>
+                      <option class="nodesc" value="13500">passing a stopped school bus            </option>
+                      <option class="nodesc" value="18900">possession of controlled substance      </option>
+                      <option class="nodesc" value="17700">prohibited u-turn                       </option>
+                      <option class="nodesc" value="25900">protective head gear violation          </option>
+                      <option class="nodesc" value="12200">racing/speed contest                    </option>
+                      <option class="nodesc" value="12300">reckless driving                        </option>
+                      <option class="nodesc" value="26100">revoked/suspended license               </option>
+                      <option class="nodesc" value="22800">seat belt                               </option>
+                      <option class="nodesc" value="21300">speeding                                </option>
+                      <option class="nodesc" value="21400">speeding in a school zone               </option>
+                      <option class="nodesc" value="21500">squealing or screeching tires           </option>
+                      <option class="nodesc" value="26000">sr-22 filing required                   </option>
+                      <option class="nodesc" value="25000">stealing auto                           </option>
+                      <option class="nodesc" value="26200">temp drivers license (issued by state)  </option>
+                      <option class="nodesc" value="17800">turned across divided section           </option>
+                      <option class="nodesc" value="20600">turned when unsafe                      </option>
+                      <option class="nodesc" value="25200">underinsured motorist claim             </option>
+                      <option class="nodesc" value="25300">uninsured motorist claim                </option>
+                      <option class="nodesc" value="12400">unsafe operator                         </option>
+                      <option class="nodesc" value="13600">unsafe speed                            </option>
+                      <option class="nodesc" value="17900">unsafe start,park,stop,standing         </option>
+                      <option class="nodesc" value="26600">unsatisfied judgement                   </option>
+                      <option class="nodesc" value="25400">vehicle emissions suspension            </option>
+                      <option class="nodesc" value="25500">vehicular injury                        </option>
+                      <option class="nodesc" value="12500">vehicular manslaughter                  </option>
+                      <option class="nodesc" value="18000">violating safety zone                   </option>
+                      <option class="nodesc" value="20700">violation of dl restriction             </option>
+                      <option class="nodesc" value="20800">violation of instruction permit         </option>
+                      <option class="nodesc" value="19000">violation of liquor law                 </option>
+                      <option class="nodesc" value="25600">violation of promise to appear          </option>
+                      <option class="nodesc" value="13700">wrong direction around traffic island   </option>
+                      <option class="nodesc" value="13800">wrong direction divided street          </option>
+                    </select>
+                    </label>
+                  </td>
+                  <td>
+                    <label><span>Description</span>
+                    <input type="text" />
+                    </label>
+                  </td>
+                  <td>
+                    <label><span>From EDB</span>
+                    <input type="hidden" />
+                    </label>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br />
+            <div style="float: left; margin-left: 5px;">
+              <input id="vioAdd" value="Add Violation" type="button" /><br />
+              <p class="alert" style="font-size: 80%; font-weight: normal;">* Violation requires description/explanation</p>
+            </div>
+            <div style="float: right; margin-right: 5px;">
+              <input value="Save" id="vioFormSubmit" type="button" />
+              <input value="Cancel" id="vioFormCancel" type="button" />
+            </div>
+          </fieldset>
+          </div>
+        <p style="text-align: center; font-size: 80%;">
+          <input value="Cancel" onclick="window.location = '/cgi-bin/qq.manage.py';" type="button" />
+          <input value="Save" onclick="gE( 'pgm' ).value = 'QQ.SAVE';" type="submit" />
+          <input value="Rate" onclick="gE( 'pgm' ).value = 'QQ.RATE';" type="submit" />
+        </p>
+        
+        <p>&nbsp;</p>
+        <div id="ctcinfohw" title="Contact Information" class="contact-form popup-form">
+
+  <!-- Address -->
+  <p class="input-container input-row">
+    <label for="ctcAddress">Address</label>
+    <input type="text" name="ctcAddress" id="ctcAddress" maxlength="30" data-optional-placeholder="(optional)" class="ui-widget-content ui-corner-all" value="">
+  </p>
+
+  <!-- Apartment Number and Type -->
+  <p class="input-container input-row">
+    <label for="ctcApt">Apartment</label>
+    <!-- Apartment Number-->
+    <input type="text" name="ctcApt" id="ctcApt" maxlength="5" size="5" data-optional-placeholder="(opt)" class="short-input ui-widget-content ui-corner-all" value="">
+    <!-- Apartment Type -->
+    <select name="ctcAptType" id="ctcAptType" data-optional-placeholder="(optional)" class="ui-widget-content ui-corner-all">
+      <option value="A">APT</option>
+      <option value="S">STE</option>
+      <option value="L">LOT</option>
+      <option value="U">UNIT</option>
+      <option value="N">NBU</option>
+    </select>
+  </p>
+
+  <!-- Zip Code and City -->
+  <p class="input-container input-row">
+    <label for="mail_zip_base">Mailing Zip</label>
+    <!-- Zip Code -->
+    <input type="text" name="mail_zip_base" id="mail_zip_base" size="5" data-optional-placeholder="(opt)" class="short-input ui-widget-content ui-corner-all" value="">
+    <!-- City -->
+    <select id="mail_zip" name="mail_zip" data-optional-placeholder="(optional)" class="ui-widget-content ui-corner-all">
+    </select>
+  </p>
+
+  <!-- Mobile Phone Number -->
+  <p class="input-container input-row">
+    <label for="ctcMPhone">Mobile Phone</label>
+    <input type="text" name="ctcMPhone" id="ctcMPhone" data-optional-placeholder="(optional)" class="phone-mask ui-widget-content ui-corner-all" value="">
+  </p>
+
+  <!-- Evening Phone Number -->
+  <p class="input-container input-row">
+    <label for="ctcHPhone">Evening Phone</label>
+    <input type="text" name="ctcHPhone" id="ctcHPhone" data-optional-placeholder="(optional)" class="phone-mask ui-widget-content ui-corner-all" value="">
+  </p>
+
+  <!-- Daytime Phone Number -->
+  <p class="input-container input-row">
+    <label for="ctcWPhone">Daytime Phone</label>
+    <input type="text" name="ctcWPhone" id="ctcWPhone" data-optional-placeholder="(optional)" class="phone-mask ui-widget-content ui-corner-all" value="">
+  </p>
+
+  <!-- E-mail Address -->
+  <p class="input-container input-row">
+    <label for="ctcEmail">E-mail Address</label>
+    <input type="text" name="ctcEmail" id="ctcEmail" data-optional-placeholder="(optional)" class="ui-widget-content ui-corner-all" value="">
+  </p>
+
+  <!-- E-mail Address -->
+  <p class="input-container input-row">
+    <label for="mailstr">Change</label>
+    <select name="mailstr" id="mailstr" class="full-select ui-widget-content ui-corner-all">
+      <option value="S">Street Address Only</option>
+      <option value="M">Street and Mailing Address</option>
+    </select>
+  </p>
+
+</div>
+      </form>
+    </div><!-- id="main" -->
+    <div id="prem"></div>
+</div>
+    <div id="footer">
+			<p class="trl">
+<a href="/index.html">Policy Services Home</a><br /><br />
+&copy; 2003-2015 Equity Insurance Company.  All Rights Reserved.<br />
+No part of this site may be reproduced without written permission from Equity.<br /><br />
+Created and Maintained by Equity IT.<br />
+<span style="color: #fff;">709.872 ms</span></p>
+		</div>
+  </body>
+
+</html>
+

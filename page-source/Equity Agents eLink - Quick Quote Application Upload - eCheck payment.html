@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+    <meta http-equiv="refresh" content="3600;url=/index.html" />
+    <meta http-equiv="pragma" content="no-cache" />
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="/styles/std.css" />
+        <link rel="stylesheet" type="text/css" href="/styles/appl.ieft.entry.css" />
+        
+        <script type="text/javascript" src="/yui/yuiloader-dom-event/yuiloader-dom-event.js"></script>
+        <script type="text/javascript" src="/scripts/eiLib.js"></script>
+        <script type="text/javascript" src="/scripts/appl.ieft.entry.js"></script>
+        <script type="text/javascript" src="https://seal.thawte.com/getthawteseal?host_name=agents.equityins.net&amp;size=S&amp;lang=en"></script>
+        
+        <title>Equity Agents eLink - Quick Quote Application Upload</title>
+</head>
+
+  <body class="yui-skin-sam">
+    <div id="bodyheader">
+  <div style="text-align: center;">
+    <img src="/images/agentselink-tn.jpg" alt="Agents e link" width="291" height="33" style="margin: 0 auto;" />
+    <h1>
+      <span style="color: #900;"> OK - vdev:master - </span>
+      <span>Quick Quote Application Upload</span>
+    </h1>
+  </div>
+  
+  <div id="flash-messages"></div>
+</div>
+    <div id="content">
+  <div xml:lang="en">
+   
+   <h2>Insured's eCheck</h2>
+   <hr />
+   <div id="ieft">
+    
+    <p>
+      Pay <span>your downpayment </span>with an electronic check.  This is a one-time payment.  It is not a recurring payment.
+    </p>
+
+    <form method="post" id="form" action="/cgi-bin/bbw.sh">
+      <div>
+        
+        <input type="hidden" name="pgm" value="APPL.UPL" />
+        <input type="hidden" name="key" value="180319 PUPPET" />
+        <input type="hidden" name="insname" value="Puppet, Master" />
+        <input type="hidden" name="insured" value="Puppet, Master" />
+        <input type="hidden" name="downpay" value="293.00   " />
+        
+        
+        
+        
+        
+        <input type="hidden" name="echeck" id="echeck" />
+        <input type="hidden" name="payMethod" id="payMethod" value="eCheck" />
+        <input type="hidden" name="agent" id="agent" value="5121" />
+        
+        
+        
+        <p style="padding-left:5px">
+            Insured: <strong>Puppet, Master</strong><br />
+          <span>Effective date: <strong>03/19/2018</strong></span><br />
+          <span>
+            Down Payment: <strong>$293.00   </strong>
+            <span style="margin-left: 1em; font-size: x-small;">(does not include agency fee)</span>
+            <br />
+          </span>
+          
+        </p>
+        <fieldset>
+          
+          <div id="name_account">
+            <label for="acctname">Name on Account</label>
+            <input type="text" id="acctname" name="acctname" />
+            <br /><br />
+          </div>
+          <!-- ieft -->
+          <label for="ieft_type">Account type</label>
+          
+          <!-- echeck -->
+          <select id="ieft_type" name="ieft_type">
+            <option value="C">Checking</option>
+            <option value="S">Savings</option>
+          </select>
+          <br /><br />
+          <div>
+            <label for="ieft_route">Bank Route ID </label>
+            <input type="text" id="ieft_route" name="ieft_route" size="9" value="" />
+            <br />
+            <label for="ieft_route2">Confirm Bank Route ID </label>
+            <input type="text" id="ieft_route2" name="ieft_route2" size="9" />
+            <br /><br />
+          </div>
+          <label for="ieft_acct">Bank Account # </label>
+          <input type="text" id="ieft_acct" name="ieft_acct" size="17" value="" />
+          <br />
+          <label for="ieft_acct2">Confirm Bank Acct # </label>
+          <input type="text" id="ieft_acct2" name="ieft_acct2" size="17" />
+          <br /><br />
+          
+        </fieldset>
+        <input type="button" style="float: left;" value="« Back" onclick="history.back();" />
+        
+        <input type="submit" value="Next »" style="float: right;" />
+        <div style="clear: both;" />
+      </div>
+    </form>
+   </div>
+  </div>
+  <div id="bottomnav">
+    <p>
+      <input type="button" value="Exit without Payment" onclick="history.go(-2);" />
+    </p>
+  </div>
+ </div>
+    <div id="footer">
+			<p class="trl">
+<a href="/index.html">Policy Services Home</a><br /><br />
+&copy; 2003-2015 Equity Insurance Company.  All Rights Reserved.<br />
+No part of this site may be reproduced without written permission from Equity.<br /><br />
+Created and Maintained by Equity IT.<br />
+<span style="color: #fff;">521.838 ms</span></p>
+		</div>
+  </body>
+
+</html>
+<!--
+Created by Troy Farrell
+
+This template provides IEFT vars before application upload.
+-->
+

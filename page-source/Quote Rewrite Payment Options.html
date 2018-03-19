@@ -1,0 +1,224 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Quote Rewrite Payment Options</title>
+    
+    <link rel="stylesheet" type="text/css" href="/styles/std.css" />
+    
+    <link rel="stylesheet" type="text/css" href="/styles/std.css" />
+    
+    
+    <script src="/yui/yuiloader-dom-event/yuiloader-dom-event.js"></script>
+    
+    <script src="/scripts/eiLib.js"></script>
+    
+    <script src="/components/jquery/dist/jquery.min.js"></script>
+    
+    <script src="/scripts/qrw.payopts.js"></script>
+    
+    <script src="https://seal.thawte.com/getthawteseal?host_name=agents.equityins.net&size=S&lang=en"></script>
+    
+    <style>
+      .outer {
+        width: 620px;
+        margin: auto;
+        border: 2px solid black;
+      }
+      .inner {
+        width: 100%;
+      }
+      .right {
+        font-weight: bold;
+      }
+      .money {
+        text-align: right;
+        padding-right: 30%;
+      }
+      td {
+        height: 1.5em;
+      }
+      td#buttons {
+        text-align: center;
+        padding: 1em 0;
+      }
+      .heading {
+        text-align: center;
+        font-weight: bold;
+      }
+      .headimg {
+        text-align: center;
+        padding: 1em;
+      }
+      #overlay {
+        visibility: hidden;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width:100%;
+        height:100%;
+        text-align:center;
+        z-index: 1000;
+        background:rgba(0,0,0,0.3);
+      }
+      #overlay div {
+        width:300px;
+        margin: 100px auto;
+        background-color: #fff;
+        border:1px solid #000;
+        padding:15px;
+        text-align:center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="headimg">
+      <img src="/images/agentselink-tn.jpg" alt="Agents e link" width="291" height="33" style="margin: 0 auto;">
+    </div>
+    <form name="payopt_form" id="payopt_form" method="post" action="">
+      <input type="hidden" id="seq" name="seq" value="0001" />
+      <input type="hidden" id="pol" name="pol" value="N35017174" />
+      <input type="hidden" id="exp" name="exp" value="061818" />
+      <input type="hidden" id="mode" name="mode" value="rewrite" />
+      <table class="outer">
+        <tr>
+          <td>
+            <h4 class="heading">Select Rewrite Payment Amount</h4>
+            <hr />
+            <table class="inner">
+              <tr>
+                <td class="left">Policy No:</td>
+                <td class="right">N35017174</td>
+              </tr>
+              <tr>
+                <td class="left">Insured:</td>
+                <td class="right">PRATHER, KARA</td>
+              </tr>
+              <tr>
+                <td class="left">Date:</td>
+                <td class="right">
+                  03/19/2018
+                </td>
+              </tr>
+              <tr>
+                <td class="left">Time:</td>
+                <td class="right">
+                  
+
+  <input
+    type="text"
+    name="time-payment"
+    id="time-payment"
+    value="04:40 PM"
+  />
+                </td>
+              </tr>
+              <tr><td colspan="2"><hr /></td></tr>
+              <tr>
+                <td colspan="2" class="heading">Select Payment Amount</td>
+              </tr>
+              <tr>
+                <td class="left">
+                  <input
+                    id="down6" name="downpay"
+                    type="radio" value="down6"
+                    data-amount="223.00"
+                  />
+                  1/6 Down
+                </td>
+                <td class="right money">
+                  <span>
+                    $223.00
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="left">
+                  <input
+                    id="downfp" name="downpay"
+                    type="radio" value="downfp"
+                    data-amount="1154.74"
+                  />
+                  Full Pay
+                </td>
+                <td class="right money">
+                  <span>
+                    $1154.74
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="left">
+                  <input type="radio" id="down-other" name="downpay" value="other">
+                  Other Payment Amount
+                </td>
+                <td class="right money">
+                  <input
+                    id="downpay-amount" name="downpay-amount"
+                    type="text" size="8" disabled
+                  >
+                </td>
+              </tr>
+              <tr><td colspan="2"><hr /></td></tr>
+              <tr>
+                <td colspan="2" class="heading">Select Payment Type</td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="radio" id="agpay" name="paytype" value="agpay"/>
+                  Agent Account
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="radio" id="ecc" name="paytype" value="ecc" />
+                  Insured Credit Card
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="radio" id="ecke" name="paytype" value="ecke" />
+                  Insured eCheck
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td id="buttons" colspan="2">
+                  <button id="acc" onclick="return accept();">Accept</button>
+                  <button id="rej" onclick="return reject();">Reject</button>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table> <!-- outer -->
+    </form>
+   <div id="footer">
+      <p class="trl">
+        <a href="/index.html">Policy Services Home</a><br /><br />
+&copy; 2003-2015 Equity Insurance Company.  All Rights Reserved.<br />
+No part of this site may be reproduced without written permission from Equity.<br /><br />Created and Maintained by Equity IT.<br />
+      </p>
+      
+  
+
+  
+  
+    <script type="text/javascript" src="/components/time-input/time-input.js"></script>
+  
+    <script type="text/javascript" src="/scripts/form.js"></script>
+  
+    </div><!-- id="footer" -->
+    <div id="overlay">
+      <div>
+        <p>Processing Request</p>
+        <img src="/images/ajax-loading.gif" alt="loading" />
+      </div>
+    </div>
+  </body>
+</html>
+

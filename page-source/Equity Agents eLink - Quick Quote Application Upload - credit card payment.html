@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+    <meta http-equiv="refresh" content="3600;url=/index.html" />
+    <meta http-equiv="pragma" content="no-cache" />
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="/styles/std.css" />
+        <link rel="stylesheet" type="text/css" href="/yui/container/assets/skins/sam/container.css" />
+        <link rel="stylesheet" type="text/css" href="/styles/appl.upl.cc.css" />
+        
+        <script type="text/javascript" src="/yui/yuiloader-dom-event/yuiloader-dom-event.js"></script>
+        <script type="text/javascript" src="/scripts/eiLib.js"></script>
+        <script type="text/javascript" src="/yui/yahoo-dom-event/yahoo-dom-event.js"></script>
+        <script type="text/javascript" src="/yui/connection/connection-min.js"></script>
+        <script type="text/javascript" src="/yui/container/container-min.js"></script>
+        <script type="text/javascript" src="/components/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="/components/jquery-mask-plugin/dist/jquery.mask.js"></script>
+        <script type="text/javascript" src="/scripts/form.js"></script>
+        <script type="text/javascript" src="/scripts/appl.upl.cc.js"></script>
+        <script type="text/javascript" src="/scripts/eiLib.js"></script>
+        <script type="text/javascript" src="/scripts/init.js"></script>
+        <script type="text/javascript" src="https://seal.thawte.com/getthawteseal?host_name=agents.equityins.net&amp;size=S&amp;lang=en"></script>
+        
+        <title>Equity Agents eLink - Quick Quote Application Upload</title>
+</head>
+
+  <body class="yui-skin-sam">
+    <div id="bodyheader">
+  <div style="text-align: center;">
+    <img src="/images/agentselink-tn.jpg" alt="Agents e link" width="291" height="33" style="margin: 0 auto;" />
+    <h1>
+      <span style="color: #900;"> OK - vdev:master - </span>
+      <span>Quick Quote Application Upload</span>
+    </h1>
+  </div>
+  
+  <div id="flash-messages"></div>
+</div>
+    <div id="content">
+    <div id="downcc">
+      <p style="padding-left:5px">
+          Insured: <strong>Puppet, Master</strong><br />
+          Effective date: <strong>03/19/2018</strong><br />
+          Down Payment: <strong>$298.00</strong>
+          <span style="margin-left: 1em; font-size: x-small;">(does not include agency fee)</span>
+          <br />
+          <span style="font-size: x-small;" />
+          <span>(includes convenience fee)</span>
+      </p>
+      <h4>Billing Information</h4>
+      <form id="newform" action="/cgi-bin/creditcard_upload.py" method="post">
+        <div>
+          <input type="hidden" id="agent" name="agent" value="5121" />
+          <input type="hidden" id="thisyear" value="2018" />
+          <input type="hidden" id="thismonth" value="3" />
+          <input type="hidden" name="ponumber" value="PUPPET, MASTER | 180319 PUPPET" />
+          <input type="hidden" name="invoice_number" value="180319 PUPPET" />
+          <input type="hidden" name="chargetotal" value="298.00" />
+          <input name="payMethod" value="Your Pay" type="hidden" />
+          <input type="hidden" name="reqtype" value="send" />
+          <label for="bname">Name:</label>
+          <input type="text" id="bname" name="bname" value="Master Puppet" />
+        </div>
+        <div>
+          <label for="baddr1">Addr:</label>
+          <input type="text" id="baddr1" name="baddr1" value="321 Main " />
+        </div>
+        <div>
+          <label for="baddr2">Addr2:</label>
+          <input type="text" id="baddr2" name="baddr2" />
+        </div>
+        <div>
+          <label for="bcity">City:</label>
+          <input type="text" id="bcity" name="bcity" value="Tulsa" />
+        </div>
+        <div>
+          <label for="bstate">State: </label>
+          <select id="bstate" name="bstate">
+            <option>AL</option>
+            <option>AK</option>
+            <option>AZ</option>
+            <option>AR</option>
+            <option>CA</option>
+            <option>CO</option>
+            <option>CT</option>
+            <option>DE</option>
+            <option>DC</option>
+            <option>FL</option>
+            <option>GA</option>
+            <option>HI</option>
+            <option>ID</option>
+            <option>IL</option>
+            <option>IN</option>
+            <option>IA</option>
+            <option>KS</option>
+            <option>KY</option>
+            <option>LA</option>
+            <option>ME</option>
+            <option>MD</option>
+            <option>MA</option>
+            <option>MI</option>
+            <option>MN</option>
+            <option>MS</option>
+            <option>MO</option>
+            <option>MT</option>
+            <option>NE</option>
+            <option>NV</option>
+            <option>NH</option>
+            <option>NJ</option>
+            <option>NM</option>
+            <option>NY</option>
+            <option>NC</option>
+            <option>ND</option>
+            <option>OH</option>
+            <option selected="selected">OK</option>
+            <option>OR</option>
+            <option>PA</option>
+            <option>PR</option>
+            <option>RI</option>
+            <option>SC</option>
+            <option>SD</option>
+            <option>TN</option>
+            <option>TX</option>
+            <option>UT</option>
+            <option>VT</option>
+            <option>VI</option>
+            <option>VA</option>
+            <option>WA</option>
+            <option>WV</option>
+            <option>WI</option>
+            <option>WY</option>
+          </select>
+        </div> <!-- state -->
+        <div>
+          <label for="bzip">Zip: </label>
+          <input type="text" id="bzip" name="bzip" size="5" maxlength="10" onchange="return checkZip.apply(this);" value="74114" />
+        </div>
+        <div>
+          <label for="bphone">Phone Number: </label>
+          <input type="text" id="bphone" name="bphone" class="phone-mask" />
+        </div>
+        <div>
+          <label for="cardnumber">Cardnumber: </label>
+          <input type="text" id="cardnumber" name="cardnumber" maxlength="16" />
+          <img src="/images/visamc_logo.png" alt="visa mc logo" />
+        </div>
+        <div>
+          <label for="expmonth">Exp: </label>
+          <select id="expmonth" name="expmonth">
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          <select id="expyear" name="expyear">
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+            <option value="2029">2029</option>
+            <option value="2030">2030</option>
+            <option value="2031">2031</option>
+            <option value="2032">2032</option>
+            <option value="2033">2033</option>
+          </select>
+        </div>
+        <div>
+          <button id="newsubmit" type="button" onclick="this.disabled=true;" style="float: right;">Submit&nbsp;Payment &raquo;</button>
+          <input type="button" value="« Back" onclick="history.back();" />
+        </div>
+      </form> <!-- ccform -->
+      <p id="cc" />
+      <form id="ccform" action="/cgi-bin/bbw.sh">
+        <div>
+          <input type="hidden" name="pgm" value="APPL.UPL" />
+          <input type="hidden" name="payMethod" value="Credit Card" />
+          <input type="hidden" name="insname" value="Puppet, Master" />
+          <input type="hidden" name="downpay" value="298.00" />
+          <input type="hidden" id="key" name="key" value="180319 PUPPET" />
+          <p>If you would rather pay over the phone, please call 800-777-0404, then press 2 for Underwriting. They will assist you in obtaining a Credit Card Authorization to enter below.
+          </p>
+        </div>
+        <fieldset>
+          <label for="payAuth">Authorization</label>
+          <!-- It seems wierd to have the id != name, but I think it's right... -->
+          <input type="text" id="payAuth" name="payNumber" size="4" onchange="return VerifyVoucher.apply( this, [ event ] );" />
+        </fieldset>
+        <div>
+          <input type="submit" value="Next »" style="float: right;" />
+          <input type="button" value="« Back" onclick="history.back();" />
+        </div>
+      </form>
+    </div>
+    <div id="bottomnav">
+      <form method="post" action="/cgi-bin/qq.manage.py">
+        <p>
+          <!-- style="height: 10em; width: 20em; border:double 5px; cursor: pointer;"-->
+          <input type="submit" value="Exit without Upload" />
+        </p>
+      </form>
+    </div><!-- bottom nav -->
+  </div>
+    <div id="footer">
+			<p class="trl">
+<a href="/index.html">Policy Services Home</a><br /><br />
+&copy; 2003-2015 Equity Insurance Company.  All Rights Reserved.<br />
+No part of this site may be reproduced without written permission from Equity.<br /><br />
+Created and Maintained by Equity IT.<br />
+<span style="color: #fff;">634.363 ms</span></p>
+		</div>
+  </body>
+
+</html>
+

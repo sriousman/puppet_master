@@ -1,0 +1,390 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+    <meta http-equiv="refresh" content="3600;url=/index.html" />
+    <meta http-equiv="pragma" content="no-cache" />
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="/styles/std.css" />
+        <link rel="stylesheet" type="text/css" href="/yui/button/assets/skins/sam/button.css" />
+        <link rel="stylesheet" type="text/css" href="/yui/container/assets/skins/sam/container.css" />
+        <link rel="stylesheet" type="text/css" href="/styles/preq.css" />
+        
+        <script type="text/javascript" src="/yui/yuiloader-dom-event/yuiloader-dom-event.js"></script>
+        <script type="text/javascript" src="/scripts/eiLib.js"></script>
+        <script type="text/javascript" src="/scripts/pgressbar.js"></script>
+        <script type="text/javascript" src="/yui/yahoo-dom-event/yahoo-dom-event.js"></script>
+        <script type="text/javascript" src="/yui/utilities/utilities.js"></script>
+        <script type="text/javascript" src="/yui/button/button-min.js"></script>
+        <script type="text/javascript" src="/yui/container/container-min.js"></script>
+        <script type="text/javascript" src="/yui/json/json-min.js"></script>
+        <script type="text/javascript" src="/scripts/qrw.preq.js"></script>
+        <script type="text/javascript" src="/scripts/common.preq.js"></script>
+        <script type="text/javascript" src="https://seal.thawte.com/getthawteseal?host_name=agents.equityins.net&amp;size=S&amp;lang=en"></script>
+        
+        <title>Equity Agents eLink - Rewrite Request Prerequisites</title>
+</head>
+
+  <body class="yui-skin-sam">
+    <div id="bodyheader">
+  <div style="text-align: center;">
+    <img src="/images/agentselink-tn.jpg" alt="Agents e link" width="291" height="33" style="margin: 0 auto;" />
+    <h1>
+      <span style="color: #900;"> OK - vdev:master - </span>
+      <span>Rewrite Request Prerequisites</span>
+    </h1>
+  </div>
+  <div>
+    <div></div>
+    <div id="navmenu">
+<!--[if lte IE 8]>
+  <img src="/images/bg_menu.png" id="navmenubg" style="top:0; width:100%; height:100%; " />
+  <ul id="nav" style="position:relative; top:-50px; ">
+<![endif]-->
+<!--[if gte IE 9]>
+  <ul id="nav">
+<![endif]-->
+<!--[if !IE]>-->
+  <ul id="nav">
+<!--<![endif]-->
+    <li id="home"><a href="/cgi-bin/bbw.sh?PGM=BUILD_INDEX_PAGE" title="Home(o)">Home</a>  </li>
+    <li><a href="#" title="Review policy information. Submit information and payments.">Policy Services</a>
+      <ul>
+        <li><a href="/cgi-bin/qq.manage.py" title="New Business Quotes &amp; Application Printing">New Quotes and Apps</a>
+        </li>
+        <li><a href="/cgi-bin/bbw.sh?PGM=BUILD_INQUIRY_PAGE" title="Policies by name or number. Respond to underwriting memos, make payments, print ID cards, submit endorsements.">Inquiry</a>
+        </li>
+        <li><a href="/cgi-bin/bbw.sh?PGM=RENEWALS" title="Policies quoted for renewal during the last 60 days. Make renewal payments.">Renewal&nbsp;Quotes</a>
+        </li>
+        <li><a href="/cgi-bin/bbw.sh?PGM=CANCELS" title="Cancellation notices on policies for non-payment of installment billing.">Non&minus;Pay&nbsp;Cancellations</a>
+        </li>
+        <li><a href="/cgi-bin/bbw.sh?PGM=MEMOLIST" title="Underwriting Memos either giving or requesting information.">Memos</a>
+        </li>
+        <li><a href="/cgi-bin/bbw.sh?PGM=ENDORSEMENTS" title="Records and status of your uploaded endorsements.">Endorsements</a>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#" title="Transactions">Transactions</a>
+      <ul>
+        <li><a href="/cgi-bin/bbw.sh?PGM=BATCHES" title="Records of your uploaded payments.">Payment&nbsp;Batches</a>
+        </li>
+        <li><a href="/cgi-bin/bbw.sh?PGM=CTS" title="Policy that have cancelled.">Processed&nbsp;Cancellations</a>
+        </li>
+        <li><a href="/cgi-bin/bbw.sh?PGM=DECS" title="Policy declarations that have been mailed to the insured.">Processed&nbsp;Dec&nbsp;Pages</a>
+        </li>
+        <li><a style="color:red;" href="/cgi-bin/bbw.sh?PGM=DNOC" title="Direct Cancel Notices.">Direct&nbsp;Cancel&nbsp;Notices</a>
+        </li>
+        <li><a style="color:red;" href="/cgi-bin/bbw.sh?PGM=NONR" title="Non-Renewals.">Non-Renewals</a>
+        </li>
+        <li><a style="color:red;" href="/cgi-bin/bbw.sh?PGM=REIN" title="Reinstatements.">Reinstatements</a>
+        </li>
+        <li><a href="/cgi-bin/bbw.sh?PGM=TFOD" title="Combined list of transactions for one day.">T-FOD</a>
+        </li>
+        <li><a href="/cgi-bin/bbw.sh?PGM=DISPLAY.EPAY.HISTORY" title="Uploaded Payment History.">Uploaded&nbsp;Payment&nbsp;History</a>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#" title="Printable forms.">Forms</a>
+      <ul>
+        <li><a href="/forms/cc.pdf" title="Credit Card Payment Authorization">Credit&nbsp;Card&nbsp;Authorization</a>
+        </li>
+        <li><a href="/forms/eftOK.pdf" title="Authorization Agreement for Direct Payments">EFT&nbsp;Authorization</a>
+        </li>
+        <li><a href="/forms/excldrvOK.pdf" title="Exclusion of Named Driver">Driver&nbsp;Exclusion</a>
+        </li>
+        <li><a href="/cgi-bin/bbw.sh?PGM=SVC" title="ID cards for New Business whose policy is not yet on the system.">New&nbsp;ID&nbsp;Cards</a>
+        </li>
+        <li><a href="/cgi-bin/okins_letter.py" title="Oklahoma Compulsory Insurance Verification letter.">OK&nbsp;OCIVS&nbsp;Letter</a>
+        </li>
+        <li><a href="/forms/physician.pdf" title="Physician's Statement">Physician's&nbsp;Statement</a>
+        </li>
+        <li><a href="/forms/quesOK.pdf" title="Applicant Questionnaire">Questionnaire</a>
+        </li>
+        <li><a href="/forms/stmtOK.pdf" title="Applicant's Statement - parent/guardian signature required for named insured of minor age">Statement</a>
+        </li>
+        <li><a href="/forms/umOK.pdf" title="Uninsured Motorist Coverage Law">Uninsured&nbsp;Motorist</a>
+        </li>
+	<li><a href="/forms/vehinspect.pdf" title="Vehicle Inspection Report">Vehicle&nbsp;Inspection</a>
+        </li>
+        <li><a href="/forms/polchg.pdf" title="Policy Change Request">Policy&nbsp;Change&nbsp;Request</a>
+        </li>
+        <li><a href="/forms/bappOK.pdf" title="Application">Application&nbsp;</a>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#" title="Information and support for agents.">Agent Services</a>
+      <ul>
+        <li><a href="/cgi-bin/bbw.sh?PGM=BULLETINS" title="Bulletins sent to agents during the last 12 months.">Bulletins</a>
+        </li>
+        <li><a href="/forms/ContactsOK.pdf" title="Equity Contacts">Equity Contacts</a>
+        </li>
+        <li><a href="/forms/guidelinesOK.pdf" title="Underwriting Guidelines">Underwriting&nbsp;Guidelines</a>
+        </li>
+        <li><a href="/cgi-bin/bbw.sh?PGM=MGRSECURITY" title="Statement Inquiry">Statement&nbsp;Inquiry</a>
+        </li>
+        <li><a href="/cgi-bin/bbw.sh?PGM=ES.DISPLAY" title="eSignature Agreement Page">eSignature Agreement</a>
+        </li>
+        <li><a href="/cgi-bin/bbw.sh?PGM=CLAIMS.OCDISPLAY" title="Open Claims">Open Claims</a>
+        </li>
+    	<li><a href="/cgi-bin/bbw.sh?PGM=CLAIMS.CHDISPLAY" title="Claims History">Claims History</a>
+	    </li>
+        
+      </ul>
+    </li>
+  </ul>
+</div>
+  </div>
+  <div id="flash-messages"></div>
+</div>
+    <div id="content">
+  <div id="main">
+    <div id="repwrap">
+      <div id="report" style="display: none;">
+          
+            <span style="display: none;" id="ai">Additional Insured must be the Leasing Company for leased vehicle on policy.</span>
+          
+          
+            <span style="display: none;" id="busdrv">Please indicate the driver for business use.</span>
+          
+          
+            <span style="display: none;" id="chgDriverAge">Changing the age of a driver requires re-rating.</span>
+          
+          
+            <span style="display: none;" id="dlno">Please enter a driver's license number.</span>
+          
+          
+            <span style="display: none;" id="dlnoid">Please enter a valid Oklahoma driver's license number.</span>
+          
+          
+            <span style="display: none;" id="dls">SR22 drivers must have a license in the state that will issue the policy.</span>
+          
+          
+            <span style="display: none;" id="dstate">Please enter a driver's license state.</span>
+          
+          
+            <span style="display: none;" id="invalidVIN17">This VIN is invalid.  The VIN should contain 17 characters.</span>
+          
+          
+            <span style="display: none;" id="invalidVIN617">This VIN is invalid.  The VIN should contain between 6 and 17 characters inclusive.</span>
+          
+          
+            <span style="display: none;" id="maritalstatus">Select Married if the driver is married and residing with their spouse.</span>
+          
+          
+            <span style="display: none;" id="missbusemp">Please enter an employer for the business driver.</span>
+          
+          
+            <span style="display: none;" id="missbusoccup">Please enter an occupation for the business driver.</span>
+          
+          
+            <span style="display: none;" id="missbussites">Please indicate how many job sites per day for business use.</span>
+          
+          
+            <span style="display: none;" id="missdlno">Please enter a driver's license number.</span>
+          
+          
+            <span style="display: none;" id="missdob">Please enter a birthdate.</span>
+          
+          
+            <span style="display: none;" id="missfname">Please enter a first name.</span>
+          
+          
+            <span style="display: none;" id="misslname">Please enter a last name.</span>
+          
+          
+            <span style="display: none;" id="missvin">Please enter a VIN.</span>
+          
+          
+            <span style="display: none;" id="paybtn">1/6 Down is only valid if application is uploaded through eLink.</span>
+          
+          
+            <span style="display: none;" id="ssn">Invalid driver social security number.</span>
+          
+          
+            <span style="display: none;" id="vinStatusDiffMakeM">This VIN is valid but does not match the vehicle specified.  The make and model will be changed to match the VIN.</span>
+          
+          
+            <span style="display: none;" id="vinStatusDiffVeh">This VIN is valid but does not match the vehicle specified.  Please enter the appropriate VIN.</span>
+          
+          
+            <span style="display: none;" id="vinStatusInvalidSM">This VIN contains an invalid serial number and does not match the specified vehicle.  Please re-enter the VIN.  Equity will need a copy of vehicle registration to complete this application.</span>
+          
+          
+            <span style="display: none;" id="vinStatusInvalidSe">This VIN contains an invalid serial number.  Please verify the VIN.  Equity will need a copy of vehicle registration to complete this application.</span>
+          
+          
+            <span style="display: none;" id="vinStatusNF">This VIN could not be found in our database.  Equity will need a copy of vehicle registration.</span>
+          
+          
+            <span style="display: none;" id="vinStatusValidNF">This VIN appears to be valid but was not found in our database.  Equity will need a copy of vehicle registration to complete this application.</span>
+          
+          
+            <span style="display: none;" id="occup">Please enter an occupation.</span>
+          
+          
+            <span style="display: none;" id="emp">Please enter an employer.</span>
+          
+          
+            <span style="display: none;" id="relationship">Please choose a relationship.</span>
+          
+          
+            <span style="display: none;" id="vinspect">Please answer the vehicle inspection question.</span>
+          
+          
+            <span style="display: none;" id="garaddr">Alternate Garaging Zip requires an address and explanation.</span>
+          
+          
+            <span style="display: none;" id="pobox">PO Box addresses are not valid alternate garaging addresses</span>
+          
+          
+            <span style="display: none;" id="dlsblank">Please choose a Driver's License State</span>
+          
+          
+            <span style="display: none;" id="prevexcl">Please answer the driver exclusion question.</span>
+          
+      </div>
+    </div>
+    <form method="post" id="dobvinform" name="dobvinform" action="/cgi-bin/qrw_request.py?agent=5121">
+      <input type="hidden" id="agent" name="agent" value="5121" />
+      <input type="hidden" id="serverdate" value="03/19/2018" />
+      <input type="hidden" id="vkey" name="vkey" value="N35017174" />
+      <input type="hidden" id="vexpdate" name="vexpdate" value="061818" />
+      <input type="hidden" id="newrateviol" name="newrateviol" value="" />
+      <input type="hidden" id="newviol" name="newviol" value="" />
+      <input type="hidden" id="newvdesc" name="newvdesc" value="" />
+      <input type="hidden" id="newdob" name="newdob" value="" />
+      <input type="hidden" id="orig" name="orig" value="qrwpreq" />
+      <input type="hidden" id="next_pgm" name="next_pgm" value="" />
+      <input type="hidden" id="seq" name="seq" value="0001" />
+      <input type="hidden" id="mode" name="mode" value="rewrite" />
+      <p>Effective date:
+        <span id="insEff">03/19/2018</span>
+      </p>
+      <!-- error message -->
+      
+      <!-- policy/coverages -->
+      
+      <!-- drivers -->
+      <!-- id="drivers" -->
+      <!-- vehicles -->
+      <div>
+      <fieldset id="vehicles">
+  <legend>Vehicles</legend>
+  <table id="vehicles-table">
+    <thead></thead>
+    <tbody>
+      <tr>
+        <td class="th">Year</td>
+        <td class="th">Make</td>
+        <td class="th">Model</td>
+        <td class="th">VIN</td>
+        <td class="th">Coll/OTC<br /> Sym</td>
+        <td class="th">Title<br />Holder</td>
+        <td class="th">Purchase Date</td>
+        <td class="th">Cost New</td>
+      </tr>
+      <tr id="v24tr">
+        <td>
+          
+          <span id="v24year">2010</span>
+        </td>
+        <td>
+          <span id="v24maketext">CHEV</span>
+          <input type="hidden" name="v24make" value="CHEV" id="v24make" />
+        </td>
+        <td>
+          <span id="v24modeltext">CAMARO</span>
+          <input type="hidden" id="v24model" value="CAMARO" name="v24model" />
+        </td>
+        <td>
+          <input type="text" onchange="return checkVIN.apply( this );" id="v24vin" class="" value="2G1FB1EV6A9106354" name="v24vin" />
+          <input type="hidden" name="v24vinstat" value="GOOD" id="v24vinstat" />
+        </td>
+        <td>
+          <span id="v24sym">15</span>
+        </td>
+        <td align="left">
+          <select onchange="if(this.value=='N'){alert('Insured is not title holder.  Please provide an explanation in Additional Remarks on the next page.');}" name="v24th" id="v24th">
+            <option value="Y" selected="selected">Y</option>
+            <option value="N">N</option>
+          </select>
+        </td>
+        <td align="left">
+          <select onchange="UpdatePDateYear.apply( this );" name="v24pdateyear" id="v24pdateyear">
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="1970">Before 2015</option>
+          </select>
+          <select onchange="UpdatePDateMonth.apply( this );" name="v24pdatemonth" id="v24pdatemonth">
+            <option value="01" selected="selected">Jan</option>
+            <option value="02">Feb</option>
+            <option value="03">Mar</option>
+            <option value="04">Apr</option>
+            <option value="05">May</option>
+            <option value="06">Jun</option>
+            <option value="07">Jul</option>
+            <option value="08">Aug</option>
+            <option value="09">Sep</option>
+            <option value="10">Oct</option>
+            <option value="11">Nov</option>
+            <option value="12">Dec</option>
+          </select>
+        </td>
+        
+      </tr>
+      <!-- Veh Inspection -->
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4">
+          Has vehicle been inspected?
+          <label for="v24vinspecty">
+            <input type="radio" value="Y" name="v24vinspect" id="v24vinspecty" />Yes
+          </label>
+          <label for="vinspectn">
+            <input type="radio" value="N" name="v24vinspect" id="v24vinspectn" />No
+          </label>
+        </td>
+        <td colspan="2"><div id="container"></div></td>
+        <td>
+          <input type="hidden" value="" name="v24vehdamage" id="v24vehdamage" />
+        </td>
+      </tr>
+      <!-- Business Use -->
+      
+      
+      <!-- Alternate Garaging Address -->
+      
+      
+      <!-- Loss Payee Information -->
+      
+      
+      <!-- Equipment -->
+      
+      
+      
+      <tr><td colspan="8"><hr /></td></tr>
+    </tbody>
+  </table>
+</fieldset><!-- id="vehicles" -->
+      </div>
+      <div style="text-align: center; margin-top: 1em;">
+        <input type="button" value="Edit Quote" onclick="if( confirm( 'All changes will be lost!' ) ) document.location='/cgi-bin/qrw.entry.py?key=N35017174&amp;mode=rewrite&amp;expdate=061818&amp;agent=5121'" />
+        <input type="submit" value="Submit Request" />
+      </div>
+    </form>
+  </div><!-- id="main" -->
+</div>
+    <div id="footer">
+			<p class="trl">
+<a href="/index.html">Policy Services Home</a><br /><br />
+&copy; 2003-2015 Equity Insurance Company.  All Rights Reserved.<br />
+No part of this site may be reproduced without written permission from Equity.<br /><br />
+Created and Maintained by Equity IT.<br />
+<span style="color: #fff;">471.616 ms</span></p>
+		</div>
+  </body>
+
+</html>
+
