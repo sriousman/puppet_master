@@ -25,58 +25,39 @@ assist the QA Specialist in testing accross a range of
 different browsers and OSes, situations,and states.
 
 Attritbutes:
-    USRS        -   list of testing agents' numbers
     PASSWORD    -   the pass for the tesing agents
-    sfile       -   string of file name saved data file 
-                    that keeps policy and vdev url from 
-                    previous usages.
-    policies    -   list of policies to be used
-    vdev        -   url to be used for the testing
+    sfile       -   json file with saved data
     qa_specialis-   name of the current qa specialist
-
+    data        -   dict of loaded json data
     """
     def __init__(self):
         self.today = dt.datetime.now().strftime("%m/%d/%Y")
-        self.USRS = ['5121','4444','5331']
+
         self.PASSWORD = 'test'
         self.sfile = './data.json'
-        
-        self.policies = []
-        self.vdev = ""
-
+        self.data = {}
         self.qa_specialist = 'Greg'
-
-        # Dance
         
+        # load saved data
         self.load_sfile()
         
 
     def load_sfile(self):
         with open(self.sfile, 'r') as f:
-            data = json.load(f)
-            self.rewrites = data['rewrites']
-            self.endorsements = data['endorsements']
-            self.vdev = data['vdev']
+            self.data = json.load(f)
     
     def save_sfile(self):
-        data = []
-        data.append(self.policies)
-        print(data)
-        data.append(self.vdev)
-        print(data)
-
-        with open(self.sfile, 'w+') as f:
-            writer = csv.writer(f)
-            writer.writerows(data)
+        with open(self.sfile, 'w') as f:
+            json.dump(self.data, f)
 
     def set_vdev(self):
-        if self.vdev:
-            print("The current vdev is set to {} ".format(self.vdev))
+        if self.data["vdev"]:
+            print("The current vdev is set to {} ".format(self.data["vdev"]))
         else:
             print("No current vdev.")
         vdev = raw_input("Enter a vdev: ")
         if vdev != '':
-            self.vdev = vdev        
+            self.data["vdev"] = vdev        
 
     def main_loop(self):
         """
@@ -85,7 +66,7 @@ Attritbutes:
         while True:
             self.clear_screen()
             self.print_screen()
-            print('Current vdev: {}'.format(self.vdev))
+            print('Current vdev: {}'.format(self.data["vdev"]))
             self.print_main_menu()
 
             cmd = raw_input("\nEnter a command: ").strip().lower()
@@ -176,11 +157,11 @@ Attritbutes:
         return tmp_pols
         
     def get_na_urls(self):
-        urls = ['http://{}:{}@{}.equityins.net/cgi-bin/qq.entry.py?agent={}'.format(u,self.PASSWORD,self.vdev[0],u) for u in self.USRS]
+        urls = ['http://{}:{}@{}.equityins.net/cgi-bin/qq.entry.py?agent={}'.format(u,self.PASSWORD,self.data["vdev"][0],u) for u in self.USRS]
         return urls
 
     def get_rewrite_urls(self):
-        urls = [('http://' + u[0] + ':' + self.PASSWORD + '@' + self.vdev +
+        urls = [('http://' + u[0] + ':' + self.PASSWORD + '@' + self.data["vdev"] +
             '.equityins.net/cgi-bin/bbw.sh?pgm=POLICY&policyno=' + u[1])
             for u in zip(self.USRS,self.policies)]
         return urls
