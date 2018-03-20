@@ -79,24 +79,31 @@ Attritbutes:
                     new_pol = raw_input("enter a new policy number: ")
                     save = raw_input("Are you sure you want to change {}, to {}".format(ref[int(change)-1]["policy"], new_pol))
                     if save == 'y':
-                        ref[int(change)-1]["policy"] = new_pol
+                        ref[int(change) - 1]["policy"] = new_pol
+                    else:
+                        print("nothing saved!")
+                        time.sleep(1)
 
-        # elif choice = 'e':
-        #     print("\nPolicies flagged for endorsements:")
+        elif choice = 'e':
+            ref = self.data["endorsements"]
+            print("\nPolicies flagged for endorsements:")
 
-        #     for indx, pol in enumerate(self.data["endorsements"], start=1):
-        #         print("{}: {} - {} {}".format(indx, * pol.values()))
-        #     try:
-        #         change = int(raw_input("\nType the number to change a policy or hit enter to cont...\n"))
-        #     except Exception as e:
-        #         print(e)
-        #         print("Enter a number")
-        #     else:
-        #         if change:
-        #             new_pol = raw_input("enter a new policy number: ")
-        #             choice = raw_input("Are you sure you want to change {}, to {}".format(self.data["policy"][change], new_pol))
-        #             if choice == 'y':
-        #                 self.data
+            for indx, pol in enumerate(ref, start=1):
+                print("{}: {} - {} {}".format(indx, * pol.values()))
+            try:
+                change = raw_input("\nType the number to change a policy or hit enter to cont...\n")
+            except Exception as e:
+                print(e)
+                print("Enter a number")
+            else:
+                if change:
+                    new_pol = raw_input("enter a new policy number: ")
+                    save = raw_input("Are you sure you want to change {}, to {}".format(ref[int(change)-1]["policy"], new_pol))
+                    if save == 'y':
+                        ref[int(change) - 1]["policy"] = new_pol
+                    else:
+                        print("nothing saved!")
+                        time.sleep(1)
 
         
     def get_na_urls(self):
