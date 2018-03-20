@@ -30,6 +30,8 @@ Attritbutes:
     qa_specialis-   name of the current qa specialist
     data        -   dict of loaded json data
     """
+
+
     def __init__(self):
         self.today = dt.datetime.now().strftime("%m/%d/%Y")
 
@@ -40,7 +42,6 @@ Attritbutes:
         
         # load saved data
         self.load_sfile()
-        
 
     def load_sfile(self):
         with open(self.sfile, 'r') as f:
@@ -57,104 +58,46 @@ Attritbutes:
             print("No current vdev.")
         vdev = raw_input("Enter a vdev: ")
         if vdev != '':
-            self.data["vdev"] = vdev        
+            self.data["vdev"] = vdev
 
-    def main_loop(self):
-        """
-    Manages the UI.
-        """
-        while True:
-            self.clear_screen()
-            self.print_screen()
-            print('Current vdev: {}'.format(self.data["vdev"]))
-            self.print_main_menu()
+    def set_policies(self):
+        choice = raw_input("Do you want to change (R)ewrites or (E)ndorsements?").strip().lower()
+        if choice == 'r':
+            ref = self.data["rewrites"]
+            print("Policies flagged for rewrite:")
 
-            cmd = raw_input("\nEnter a command: ").strip().lower()
+            for indx, pol in enumerate(ref, start=1):
+                print("{}: {} - {} {}".format(indx, * pol.values()))
 
-            if cmd == 'p':
-                self.clear_screen()
-                self.policies = self.get_policies()
-
-            elif cmd == 'v':
-                self.clear_screen()
-                self.set_vdev()
-
-            elif cmd == 'r':
-                try:
-                    thread.start_new_thread(self.rewrites, (self.get_rewrite_urls(),))
-                except Exception as e:
-                    self.clear_screen()
-                    traceback.print_exc()
-                    print(type(e))
-                    print(e)
-                    print("Something went wrong! Try changing some data and continue.")
-
-            elif cmd == 'n':
-                    self.new_apps(self.get_na_urls())
-
-            elif cmd == 'q':
-                self.save_sfile()
-               # self.clear_screen()
-                print("Thanks for playing!")
-                time.sleep(1)
-               # self.clear_screen()
-                sys.exit(0)
-
+            try:
+                change = raw_input("\nType the number to change a policy or hit enter to cont...\n")
+            except Exception as e:
+                print(e)
+                print("Enter a number")
             else:
-                print("Try Again...")
-                return self.main_loop()
+                if change:
+                    new_pol = raw_input("enter a new policy number: ")
+                    save = raw_input("Are you sure you want to change {}, to {}".format(ref[int(change)-1]["policy"], new_pol))
+                    if save == 'y':
+                        ref[int(change)-1]["policy"] = new_pol
 
+        # elif choice = 'e':
+        #     print("\nPolicies flagged for endorsements:")
 
-    def print_screen(self):
-        print('--------------------------------------------------------------')
-        print("Today's Date: {}".format(self.today))
-        print( 
-            " _____                        _             \n"             
-            "|  __ \                      | |            \n"            
-            "| |__) _   _ _ __  _ __   ___| |_           \n"         
-            "|  ___| | | | '_ \| '_ \ / _ | __|          \n"
-            "| |   | |_| | |_) | |_) |  __| |_           \n"
-            "|_|    \__,_| .__/| .__/ \___|\__|          \n"
-            "            | |   | |                       \n"
-            "            |_|_  |_|          _            \n"
-            "            |  \/  |         | |            \n"
-            "            | \  / | __ _ ___| |_ ___ _ __  \n"
-            "            | |\/| |/ _` / __| __/ _ | '__| \n"
-            "            | |  | | (_| \__ | ||  __| |    \n"
-            "            |_|  |_|\__,_|___/\__\___|_|    \n"
-            "--------------------------------------------------------------\n"
-            "Welcome to Puppet Master {}".format(self.qa_specialist)                                 
-                                             )
-        print('--------------------------------------------------------------')
-    
-    def print_main_menu(self):
-        print(
-                ":          MENU                   :\n"
-                ": r     -  Rewrites               :\n"
-                ": n     -  New App                :\n"
-                ": p     -  Enter New Policies     :\n"  
-                ": v     -  Enter New Evirnoment   :\n"
-                ": q     -  Quit                   :\n"
-        )
+        #     for indx, pol in enumerate(self.data["endorsements"], start=1):
+        #         print("{}: {} - {} {}".format(indx, * pol.values()))
+        #     try:
+        #         change = int(raw_input("\nType the number to change a policy or hit enter to cont...\n"))
+        #     except Exception as e:
+        #         print(e)
+        #         print("Enter a number")
+        #     else:
+        #         if change:
+        #             new_pol = raw_input("enter a new policy number: ")
+        #             choice = raw_input("Are you sure you want to change {}, to {}".format(self.data["policy"][change], new_pol))
+        #             if choice == 'y':
+        #                 self.data
 
-    def clear_screen(self):
-        print("\033c")
-    
-    def get_policies(self):
-        if self.policies:
-            print("The current policies are set to (ok,mo,ar): ")
-            print("{}, {}, {}".format(*self.policies))
-        else:
-            print("No policies currently selected...")
-    
-        states = ['Oklahoma','Missouri','Arkansas']
-        tmp_pols = []
-
-        for s in states:
-            p = raw_input('Enter policy no. for {} rewrite'.format(s)).upper()
-            tmp_pols.append(p)
-        
-        return tmp_pols
         
     def get_na_urls(self):
         urls = ['http://{}:{}@{}.equityins.net/cgi-bin/qq.entry.py?agent={}'.format(u,self.PASSWORD,self.data["vdev"][0],u) for u in self.USRS]
@@ -206,6 +149,88 @@ Attritbutes:
             driver = webdriver.Chrome(chrome_options=options)
             driver.get(u)
             
+    def main_loop(self):
+        """
+    Manages the UI.
+        """
+        while True:
+            self.clear_screen()
+            self.print_screen()
+            print('Current vdev: {}'.format(self.data["vdev"]))
+            self.print_main_menu()
+
+            cmd = raw_input("\nEnter a command: ").strip().lower()
+
+            if cmd == 'p':
+                self.clear_screen()
+                self.set_policies()
+
+            elif cmd == 'v':
+                self.clear_screen()
+                self.set_vdev()
+
+            elif cmd == 'r':
+                try:
+                    thread.start_new_thread(self.rewrites, (self.get_rewrite_urls(),))
+                except Exception as e:
+                    self.clear_screen()
+                    traceback.print_exc()
+                    print(type(e))
+                    print(e)
+                    print("Something went wrong! Try changing some data and continue.")
+
+            elif cmd == 'n':
+                    self.new_apps(self.get_na_urls())
+
+            elif cmd == 'q':
+               # self.clear_screen()
+                print("Thanks for playing!")
+                time.sleep(1)
+               # self.clear_screen()
+                sys.exit(0)
+            elif cmd == 's':
+                self.save_sfile()
+            else:
+                print("Try Again...")
+                return self.main_loop()
+
+
+    def print_screen(self):
+        print('--------------------------------------------------------------')
+        print("Today's Date: {}".format(self.today))
+        print( 
+            " _____                        _             \n"             
+            "|  __ \                      | |            \n"            
+            "| |__) _   _ _ __  _ __   ___| |_           \n"         
+            "|  ___| | | | '_ \| '_ \ / _ | __|          \n"
+            "| |   | |_| | |_) | |_) |  __| |_           \n"
+            "|_|    \__,_| .__/| .__/ \___|\__|          \n"
+            "            | |   | |                       \n"
+            "            |_|_  |_|          _            \n"
+            "            |  \/  |         | |            \n"
+            "            | \  / | __ _ ___| |_ ___ _ __  \n"
+            "            | |\/| |/ _` / __| __/ _ | '__| \n"
+            "            | |  | | (_| \__ | ||  __| |    \n"
+            "            |_|  |_|\__,_|___/\__\___|_|    \n"
+            "--------------------------------------------------------------\n"
+            "Welcome to Puppet Master {}".format(self.qa_specialist)                                 
+                                             )
+        print('--------------------------------------------------------------')
+    
+    def print_main_menu(self):
+        print(
+                "           MENU                    \n\n"
+                ": r     -  Rewrites               :\n"
+                ": n     -  New App                :\n"
+                ": p     -  Enter New Policies     :\n"  
+                ": v     -  Enter New Envirnoment  :\n"
+                ": s     -  Save                   :\n"
+                ": q     -  Quit                   :\n"
+        )
+
+    def clear_screen(self):
+        print("\033c")
+
 
 if __name__ == '__main__':
     a = App()
