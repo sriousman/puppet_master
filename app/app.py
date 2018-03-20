@@ -29,12 +29,13 @@ Attritbutes:
     sfile       -   json file with saved data
     qa_specialis-   name of the current qa specialist
     data        -   dict of loaded json data
+    USRS        -   list of test agents
     """
 
 
     def __init__(self):
         self.today = dt.datetime.now().strftime("%m/%d/%Y")
-
+        self.USRS = ['5121','5331','4444']
         self.PASSWORD = 'test'
         self.sfile = './data.json'
         self.data = {}
@@ -107,7 +108,7 @@ Attritbutes:
 
         
     def get_na_urls(self):
-        urls = ['http://{}:{}@{}.equityins.net/cgi-bin/qq.entry.py?agent={}'.format(u,self.PASSWORD,self.data["vdev"][0],u) for u in self.USRS]
+        urls = ['http://{}:{}@{}.equityins.net/cgi-bin/qq.entry.py?agent={}'.format(u,self.PASSWORD,self.data["vdev"],u) for u in self.USRS]
         return urls
 
     def get_rewrite_urls(self):
