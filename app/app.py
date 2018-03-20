@@ -116,7 +116,7 @@ Attritbutes:
         vdev = self.data["vdev"]
         entry_point = self.data["rewrite_entry_point"]
         
-        return ['http://' + r["state"] + ':' + self.PASSWORD + '@' + vdev + entry_point + r["policy"] for r in ref]
+        return ['http://' + r["agent"] + ':' + self.PASSWORD + '@' + vdev + entry_point + r["policy"] for r in ref]
 
     def run_setup(self, urls, kwargs):
         """
@@ -243,7 +243,7 @@ Attritbutes:
 
 if __name__ == '__main__':
     a = App()
-    print(a.get_na_urls())
+    print(a.get_rewrite_urls())
 
 
 
