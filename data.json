@@ -1,0 +1,42 @@
+{
+    "rewrite_entry_point": ".equityins.net/cgi-bin/bbw.sh?pgm=POLICY&policyno=",
+    "rewrites" : [
+        {
+            "state": "OK",
+            "agent": "5121",
+            "policy": "N35036913"
+        },
+        {
+            "state": "MO",
+            "agent": "4444",
+            "policy": "N24053825"
+        },
+        {
+            "state": "MO",
+            "agent": "5331",
+            "policy": "N03611353"
+        }
+
+    ],
+    "endorsement_entry_point": ".equityins.net/cgi-bin/bbw.sh?pgm=POLICY&policyno=",
+    "endorsements" : [
+        {
+            "state": "OK",
+            "agent": "5121",
+            "policy": "N35036913"
+        },
+        {
+            "state": "MO",
+            "agent": "4444",
+            "policy": "N24053825"
+        },
+        {
+            "state": "MO",
+            "agent": "5331",
+            "policy": "N03611353"
+        }
+    ],
+
+    "vdev": "148-copy.dev"
+
+}

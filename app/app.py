@@ -1,13 +1,3 @@
-# """
-# Utility to assist QA Specialist in opening rewrites in
-# multiple browsers in multiple states.
-# Future: assist in finding suitable policies
-# Future: assist in copying policies to testing environments
-# Future: assist in opening browsers in VMs (IE and Edge)
-# Future: assist in keeping console error logs
-# Future: assist in keeping notes and writing test reviews
-# """
-
 from selenium import webdriver
 from selenium.webdriver.support import ui
 from selenium.webdriver.common.keys import Keys
@@ -22,6 +12,7 @@ import thread
 import time
 import traceback
 import datetime as dt
+import json
 
 
 class App(object):
@@ -48,7 +39,7 @@ Attritbutes:
         self.today = dt.datetime.now().strftime("%m/%d/%Y")
         self.USRS = ['5121','4444','5331']
         self.PASSWORD = 'test'
-        self.sfile = './data.csv'
+        self.sfile = './data.json'
         
         self.policies = []
         self.vdev = ""
@@ -61,10 +52,11 @@ Attritbutes:
         
 
     def load_sfile(self):
-        with open(self.sfile, 'r+') as f:
-            reader = csv.reader(f)
-            self.policies = reader.next()
-            self.vdev = reader.next()
+        with open(self.sfile, 'r') as f:
+            data = json.load(f)
+            self.rewrites = data['rewrites']
+            self.endorsements = data['endorsements']
+            self.vdev = data['vdev']
     
     def save_sfile(self):
         data = []
@@ -193,7 +185,7 @@ Attritbutes:
             for u in zip(self.USRS,self.policies)]
         return urls
 
-    def rewrites(self, urls):
+    def run_setup(self, urls, kwargs):
         """
     The master of puppets controls the browsers and soon
     Docker containers and someday The World!!!
