@@ -85,7 +85,7 @@ Attritbutes:
                         print("nothing saved!")
                         time.sleep(1)
 
-        elif choice = 'e':
+        elif choice == 'e':
             ref = self.data["endorsements"]
             print("\nPolicies flagged for endorsements:")
 
@@ -112,10 +112,11 @@ Attritbutes:
         return urls
 
     def get_rewrite_urls(self):
-        urls = [('http://' + u[0] + ':' + self.PASSWORD + '@' + self.data["vdev"] +
-            '.equityins.net/cgi-bin/bbw.sh?pgm=POLICY&policyno=' + u[1])
-            for u in zip(self.USRS,self.policies)]
-        return urls
+        ref = self.data["rewrites"]
+        vdev = self.data["vdev"]
+        entry_point = self.data["rewrite_entry_point"]
+        
+        return ['http://' + r["state"] + ':' + self.PASSWORD + '@' + vdev + entry_point + r["policy"] for r in ref]
 
     def run_setup(self, urls, kwargs):
         """
@@ -242,7 +243,7 @@ Attritbutes:
 
 if __name__ == '__main__':
     a = App()
-    a.main_loop()
+    print(a.get_na_urls())
 
 
 
