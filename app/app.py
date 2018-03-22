@@ -105,8 +105,7 @@ Attritbutes:
                     else:
                         print("nothing saved!")
                         time.sleep(1)
-
-        
+      
     def get_na_urls(self):
         urls = ['http://{}:{}@{}.equityins.net/cgi-bin/qq.entry.py?agent={}'.format(u,self.PASSWORD,self.data["vdev"],u) for u in self.USRS]
         return urls
@@ -118,23 +117,19 @@ Attritbutes:
         
         return ['http://' + r["agent"] + ':' + self.PASSWORD + '@' + vdev + entry_point + r["policy"] for r in ref]
 
-    def run_setup(self, urls, kwargs):
-        """
-    The master of puppets controls the browsers and soon
-    Docker containers and someday The World!!!
-        """
-        print(urls)
-        # Open Firefox browsers in all 3 states and go to 
-        # Quick Quote Rewrite Auto Rater Page
-        for u in urls:
-            options = Options()
-            options.add_argument("--devtools")
-            driver = webdriver.Firefox(firefox_options=options)
-            driver.get(u)
-            driver.find_element(By.XPATH, '//a[text()="Quote a rewrite with change"]').click()
+    def run_setup(self, urls):
+        """The master of puppets controls the browsers and soon
+        Docker containers and someday The World ! ! ! """
+        test_type = raw_input("Is this test for (r)ewrites, (e)ndoresements or (n)ew business applications? ")
+        browsers = raw_input("Enter the browsers you want to test. (ff) (ch):  ")
+        states = raw_input("Enter the states you want to test. (o) - oklahoma, (m) - missouri, (a) - arkansas : ")
+
+        options = Options()
+        options.add_argument("--devtools")
+        driver = webdriver.Firefox(firefox_options=options)
+        driver.get(u)
+        driver.find_element(By.XPATH, '//a[text()="Quote a rewrite with change"]').click()
         
-        # Open Chrome browsers in all 3 states and go to 
-        # Quick Quote Rewrite Auto Rater
         for u in urls:
             options = webdriver.ChromeOptions()
             options.add_experimental_option("detach", True)
@@ -159,9 +154,7 @@ Attritbutes:
             driver.get(u)
             
     def main_loop(self):
-        """
-    Manages the UI.
-        """
+        """Manages the UI."""
         while True:
             self.clear_screen()
             self.print_screen()
@@ -203,7 +196,6 @@ Attritbutes:
                 print("Try Again...")
                 return self.main_loop()
 
-
     def print_screen(self):
         print('--------------------------------------------------------------')
         print("Today's Date: {}".format(self.today))
@@ -222,8 +214,7 @@ Attritbutes:
             "            | |  | | (_| \__ | ||  __| |    \n"
             "            |_|  |_|\__,_|___/\__\___|_|    \n"
             "--------------------------------------------------------------\n"
-            "Welcome to Puppet Master {}".format(self.qa_specialist)                                 
-                                             )
+            "Welcome to Puppet Master {}".format(self.qa_specialist))
         print('--------------------------------------------------------------')
     
     def print_main_menu(self):
@@ -240,6 +231,17 @@ Attritbutes:
     def clear_screen(self):
         print("\033c")
 
+class Runner(object):
+    """ Runner class creates, manages and logs a new testing session"""
+
+    def __init__(self, browsers, test_type, states):
+        self.browsers = browsers
+        self.test_type = test_type
+        self.states = states
+        # create driver instances
+        # runs commands in paralell on each browser instance
+        # record and log cconsole errors and browser logs
+        # can right in assertions and get test results back.
 
 if __name__ == '__main__':
     a = App()

@@ -1,1 +1,39 @@
-{"vdev": "148-copy.dev", "endorsements": [{"policy": "N35036913", "state": "OK", "agent": "5121"}, {"policy": "N24053825", "state": "MO", "agent": "4444"}, {"policy": "N03611353", "state": "MO", "agent": "5331"}], "rewrite_entry_point": ".equityins.net/cgi-bin/bbw.sh?pgm=POLICY&policyno=", "rewrites": [{"policy": "N35036913", "state": "OK", "agent": "5121"}, {"policy": "N24053825", "state": "MO", "agent": "4444"}, {"policy": "N03611353", "state": "MO", "agent": "5331"}], "endorsement_entry_point": ".equityins.net/cgi-bin/bbw.sh?pgm=POLICY&policyno="}
+{
+    "vdev": "148-copy.dev",
+    "endorsements": [
+        {
+            "policy": "N35036913",
+            "state": "OK",
+            "agent": "5121"
+        },
+        {
+            "policy": "N24053825",
+            "state": "MO",
+            "agent": "4444"
+        },
+        {
+            "policy": "N03611353",
+            "state": "MO",
+            "agent": "5331"
+        }
+    ],
+    "endorsement_entry_point": ".equityins.net/cgi-bin/bbw.sh?pgm=POLICY&policyno=",
+    "rewrites": [
+        {
+            "policy": "N35036913",
+            "state": "OK",
+            "agent": "5121"
+        },
+        {
+            "policy": "N24053825",
+            "state": "MO",
+            "agent": "4444"
+        },
+        {
+            "policy": "N03611353",
+            "state": "MO",
+            "agent": "5331"
+        }
+    ],
+    "rewrite_entry_point": ".equityins.net/cgi-bin/bbw.sh?pgm=POLICY&policyno="
+}
